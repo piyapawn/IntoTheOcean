@@ -4,14 +4,14 @@ body {
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
-    background-color: hsl(176, 100%, 83%);
-}
-.scene{
-    width: 100%;
-    height: 100%;
     background-image: url(https://media.istockphoto.com/vectors/vector-cartoon-clear-ocean-sea-background-with-empty-blue-sky-vector-id1028287226?k=20&m=1028287226&s=170667a&w=0&h=Pb1u_eqsbMR7ukfOqx8mjJ2ekfXsb_hRDkHmclwkjgM=);
     background-repeat: no-repeat;
     background-size: cover;
+}
+#page{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
 }
 /* ป้ายไม้ */
 .logo{
@@ -38,6 +38,7 @@ body {
     background-color: hsl(180, 42%, 71%);
     color:white;
     border:3px solid hsl(180, 42%, 71%);
+
 }
 .gogo span {
     cursor:pointer;
@@ -51,15 +52,17 @@ body {
     cursor: pointer;
 }
 
-/* ปุ่มโฮมโดนชี้  */
+/* ปุ่มโฮม */
 .homeicon{
-    width: 70px;
+    width: 100px;
+    height: 70px;
     position: absolute;
     bottom:5%;
     left: 1%;
-    background-color: white;
+    background: white;
     border-radius: 30px;
     cursor: pointer;
+
 }
 .homeicon:hover{
     box-shadow: 0 2px 2px 2px hsl(180, 42%, 20%);
@@ -75,7 +78,7 @@ body {
 
 .cloud1{
     width: 20%;
-    animation:cloudmove 10s infinite alternate;
+    animation:cloudmove 9s infinite alternate;
 }
 .cloud2{
     width: 15%;
@@ -100,4 +103,10 @@ body {
 @keyframes cloudmove {
     from {transform: translateX(0px);}
     to {transform: translateX(100px);}
+}
+
+/* เปลี่ยนหน้าจ้า */
+#page[data-scene="canoepage"] .logo{
+    width: 0;
+    height: 0;
 }
