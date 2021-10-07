@@ -54,3 +54,8 @@ body {
 .homeicon:hover{
     box-shadow: 0 2px 2px 2px hsl(180, 42%, 20%);
 }
+.canoe{
+    position: absolute;
+    bottom: 22%;
+    right: 15%;
+}
