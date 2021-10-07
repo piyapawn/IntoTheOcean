@@ -1,6 +1,9 @@
 body {
     margin:0;
     padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
     background-color: hsl(176, 100%, 83%);
 }
 .scene{
@@ -10,11 +13,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* ป้ายไม้ */
 .logo{
     position: absolute;
     top:0%;
     right:55%;
 }
+
+/* ปุ่ม ออกเดินทาง  */
 .gogo{
     border-radius: 30px;
     background-color: rgb(247, 238, 221);
@@ -36,12 +42,16 @@ body {
 .gogo span {
     cursor:pointer;
 }
+
+/* รูปเรือตรงปุ่ม ออกเดินทาง  */
 .shipicon{
     position: absolute;
     bottom:35.5%;
     left: 23%;
     cursor: pointer;
 }
+
+/* ปุ่มโฮมโดนชี้  */
 .homeicon{
     width: 70px;
     position: absolute;
@@ -54,8 +64,40 @@ body {
 .homeicon:hover{
     box-shadow: 0 2px 2px 2px hsl(180, 42%, 20%);
 }
+
+/* เรือแคนูหน้าโฮม  */
 .canoe{
     position: absolute;
     bottom: 22%;
     right: 15%;
+    animation:shipshake 2s infinite alternate;
+}
+
+.cloud1{
+    width: 20%;
+    animation:cloudmove 10s infinite alternate;
+}
+.cloud2{
+    width: 15%;
+    position: absolute;
+    top: 4%;
+    right: 25%;
+    animation:cloudmove 10s infinite alternate;
+}
+.cloud3{
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    animation:cloudmove 7s infinite alternate;
+}
+
+/* อนิเมชันของเรือขยับขึ้นลงๆ  */
+@keyframes shipshake {
+    from {transform: translateY(0px)}
+    to {transform: translateY(20px)}
+}
+/* อนิเมชันของก้อนเมฆลอยๆ  */
+@keyframes cloudmove {
+    from {transform: translateX(0px);}
+    to {transform: translateX(100px);}
 }
