@@ -1,0 +1,56 @@
+body {
+    margin:0;
+    padding:0;
+    background-color: hsl(176, 100%, 83%);
+}
+.scene{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://media.istockphoto.com/vectors/vector-cartoon-clear-ocean-sea-background-with-empty-blue-sky-vector-id1028287226?k=20&m=1028287226&s=170667a&w=0&h=Pb1u_eqsbMR7ukfOqx8mjJ2ekfXsb_hRDkHmclwkjgM=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    position: absolute;
+    top:0%;
+    right:55%;
+}
+.gogo{
+    border-radius: 30px;
+    background-color: rgb(247, 238, 221);
+    color:black;
+    border:3px solid hsl(180, 42%, 71%);
+    font-size: 25px;
+    width:400px;
+    height:60px;
+    cursor: pointer;
+    position: absolute;
+    bottom:35%;
+    left: 8%;
+}
+.gogo:hover {
+    background-color: hsl(180, 42%, 71%);
+    color:white;
+    border:3px solid hsl(180, 42%, 71%);
+}
+.gogo span {
+    cursor:pointer;
+}
+.shipicon{
+    position: absolute;
+    bottom:35.5%;
+    left: 23%;
+    cursor: pointer;
+}
+.homeicon{
+    width: 70px;
+    position: absolute;
+    bottom:5%;
+    left: 1%;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.homeicon:hover{
+    box-shadow: 0 2px 2px 2px hsl(180, 42%, 20%);
+}
