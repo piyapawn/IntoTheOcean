@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background-image: url(https://media.istockphoto.com/vectors/vector-cartoon-clear-ocean-sea-background-with-empty-blue-sky-vector-id1028287226?k=20&m=1028287226&s=170667a&w=0&h=Pb1u_eqsbMR7ukfOqx8mjJ2ekfXsb_hRDkHmclwkjgM=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#page{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+}
+/* ป้ายไม้ */
+.logo{
+    position: absolute;
+    top:0%;
+    right:55%;
+    transition: 2s;
+}
+
+/* ปุ่ม ออกเดินทาง  */
+.gogo{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    border-radius: 30px;
+    background-color: rgb(247, 238, 221);
+    color:black;
+    border:3px solid hsl(180, 42%, 71%);
+    font-size: 25px;
+    font-weight: bold;
+    width:400px;
+    height:60px;
+    cursor: pointer;
+    position: absolute;
+    bottom:35%;
+    left: 8%;
+    transition: 2s;
+}
+.gogo:hover {
+    background-color: hsl(180, 42%, 50%);
+    color:white;
+    border:3px solid hsl(180, 42%, 80%);
+
+}
+
+/* รูปเรือตรงปุ่ม ออกเดินทาง  */
+.shipicon{
+    position: absolute;
+    bottom:35.5%;
+    left: 23%;
+    cursor: pointer;
+    transition: 2s;
+}
+
+/* ปุ่มโฮม */
+.homeicon{
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    bottom:5%;
+    left: 1%;
+    background: white;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+.homeicon:hover{
+    box-shadow: 0 2px 2px 2px hsl(180, 42%, 20%);
+}
+
+/* เรือแคนูหน้าโฮม  */
+.canoe{
+    position: absolute;
+    bottom: 18%;
+    right: 15%;
+    transition: 2s;
+    animation: shake 3s infinite;
+}
+
+
+.cloud1{
+    width: 20%;
+    animation:cloudmove 9s infinite alternate;
+}
+.cloud2{
+    width: 15%;
+    position: absolute;
+    top: 4%;
+    right: 25%;
+    animation:cloudmove 10s infinite alternate;
+}
+.cloud3{
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    animation:cloudmove 7s infinite alternate;
+}
+
+/* ไอค่อนnext */
+.nexticon{
+    background: transparent;
+    position: absolute;
+    bottom: 30%;
+    right: 5%;
+    border: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.nexticon:hover{
+    animation: buttonkiki 0.6s infinite alternate;
+}
+
+
+/* กล่องข้อมูลเรือ */
+.canoeinformationbox{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid;
+    left: 30%;
+    top: 10%;
+    background-color: white;
+    opacity: 90%;
+    transition: 2s;
+}
+
+
+/* อนิเมชันของก้อนเมฆลอยๆ */
+@keyframes cloudmove {
+    from {transform: translateX(0px);}
+    to {transform: translateX(100px);}
+}
+
+/* อนิเมชันปุ่มโดนชี้ดุ๊กดิ๊ก */
+@keyframes buttonkiki {
+    from {transform: translateY(0px);}
+    to {transform: translateY(10px);}
+}
+
+/* เปลี่ยนหน้าจ้า */
+#page:not([data-scene="mainpage"]) .logo{
+    transform: translateY(-800px);
+}
+#page:not([data-scene="mainpage"]) .canoe{
+    transform: translateX(-400px);
+}
+#page:not([data-scene="mainpage"]) .gogo{
+    transform: translateX(-1000px);
+}
+#page[data-scene="mainpage"] .nexticon{
+    transform: translateX(200px);
+}
+
+
+#page:not([data-scene="canoepage"]) .canoeinformationbox{
+    transform: translateY(-800px);
+}
+
+/* เพิ่มอนิเมชั่นการขยับของเรือ */
+@keyframes shake {
+    0%   {bottom: 18%;}
+    50%  {bottom: 15%;}
+    100% {bottom: 18%;}
+}
