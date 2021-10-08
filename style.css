@@ -35,6 +35,7 @@ body {
     position: absolute;
     bottom:35%;
     left: 8%;
+    transition: 2s;
 }
 .gogo:hover {
     background-color: hsl(180, 42%, 71%);
@@ -52,6 +53,7 @@ body {
     bottom:35.5%;
     left: 23%;
     cursor: pointer;
+    transition: 2s;
 }
 
 /* ปุ่มโฮม */
@@ -75,7 +77,14 @@ body {
     position: absolute;
     bottom: 18%;
     right: 15%;
-    transition: 3s;
+    transition: 2s;
+
+}
+.canoe2{
+    position: absolute;
+    bottom: 18%;
+    left: 1px;
+    transition: 2s;
 
 }
 
@@ -107,9 +116,22 @@ body {
 
 
 /* เปลี่ยนหน้าจ้า */
-#page[data-scene="canoepage"] .logo{
+#page:not([data-scene="mainpage"]) .logo{
     transform: translateY(-800px);
 }
-#page[data-scene="canoepage"] .canoe{
-    transform: translateX(1000px);
+#page:not([data-scene="mainpage"]) .canoe{
+    transform: translateX(-400px);
+}
+#page:not([data-scene="mainpage"]) .gogo{
+    transform: translateX(-1000px);
+}
+#page:not([data-scene="mainpage"]) .shipicon{
+    transform: translateX(-1000px);
+}
+
+#page:not([data-scene="canoepage"]) .canoe2{
+    width: 0px;
+}
+#page[data-scene="canoepage"] .canoe2{
+    left:40%;
 }
