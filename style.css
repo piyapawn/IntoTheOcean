@@ -80,13 +80,7 @@ body {
     transition: 2s;
 
 }
-.canoe2{
-    position: absolute;
-    bottom: 18%;
-    left: 1px;
-    transition: 2s;
 
-}
 
 .cloud1{
     width: 20%;
@@ -106,14 +100,47 @@ body {
     animation:cloudmove 7s infinite alternate;
 }
 
+/* ไอค่อนnext */
+.nexticon{
+    background: transparent;
+    position: absolute;
+    bottom: 30%;
+    right: 5%;
+    border: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.nexticon:hover{
+    animation: buttonkiki 0.6s infinite alternate;
+}
 
 
-/* อนิเมชันของก้อนเมฆลอยๆ  */
+/* กล่องข้อมูลเรือ */
+.canoeinformationbox{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    border-radius: 30px;
+    border: 2px solid;
+    left: 30%;
+    top: 10%;
+    background-color: white;
+    opacity: 90%;
+    transition: 2s;
+}
+
+
+/* อนิเมชันของก้อนเมฆลอยๆ */
 @keyframes cloudmove {
     from {transform: translateX(0px);}
     to {transform: translateX(100px);}
 }
 
+/* อนิเมชันปุ่มโดนชี้ดุ๊กดิ๊ก */
+@keyframes buttonkiki {
+    from {transform: translateY(0px);}
+    to {transform: translateY(10px);}
+}
 
 /* เปลี่ยนหน้าจ้า */
 #page:not([data-scene="mainpage"]) .logo{
@@ -125,13 +152,12 @@ body {
 #page:not([data-scene="mainpage"]) .gogo{
     transform: translateX(-1000px);
 }
-#page:not([data-scene="mainpage"]) .shipicon{
-    transform: translateX(-1000px);
+#page[data-scene="mainpage"] .nexticon{
+    transform: translateX(200px);
 }
 
-#page:not([data-scene="canoepage"]) .canoe2{
-    width: 0px;
+
+#page:not([data-scene="canoepage"]) .canoeinformationbox{
+    transform: translateY(-800px);
 }
-#page[data-scene="canoepage"] .canoe2{
-    left:40%;
-}
+
