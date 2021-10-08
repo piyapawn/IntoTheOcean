@@ -7,6 +7,7 @@ body {
     background-image: url(https://media.istockphoto.com/vectors/vector-cartoon-clear-ocean-sea-background-with-empty-blue-sky-vector-id1028287226?k=20&m=1028287226&s=170667a&w=0&h=Pb1u_eqsbMR7ukfOqx8mjJ2ekfXsb_hRDkHmclwkjgM=);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 #page{
     width: 90%;
@@ -18,6 +19,7 @@ body {
     position: absolute;
     top:0%;
     right:55%;
+    transition: 2s;
 }
 
 /* ปุ่ม ออกเดินทาง  */
@@ -71,9 +73,10 @@ body {
 /* เรือแคนูหน้าโฮม  */
 .canoe{
     position: absolute;
-    bottom: 22%;
+    bottom: 18%;
     right: 15%;
-    animation:shipshake 2s infinite alternate;
+    transition: 3s;
+
 }
 
 .cloud1{
@@ -94,19 +97,19 @@ body {
     animation:cloudmove 7s infinite alternate;
 }
 
-/* อนิเมชันของเรือขยับขึ้นลงๆ  */
-@keyframes shipshake {
-    from {transform: translateY(0px)}
-    to {transform: translateY(20px)}
-}
+
+
 /* อนิเมชันของก้อนเมฆลอยๆ  */
 @keyframes cloudmove {
     from {transform: translateX(0px);}
     to {transform: translateX(100px);}
 }
 
+
 /* เปลี่ยนหน้าจ้า */
 #page[data-scene="canoepage"] .logo{
-    width: 0;
-    height: 0;
+    transform: translateY(-800px);
+}
+#page[data-scene="canoepage"] .canoe{
+    transform: translateX(1000px);
 }
