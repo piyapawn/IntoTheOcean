@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background-image: url(https://media.istockphoto.com/vectors/vector-cartoon-clear-ocean-sea-background-with-empty-blue-sky-vector-id1028287226?k=20&m=1028287226&s=170667a&w=0&h=Pb1u_eqsbMR7ukfOqx8mjJ2ekfXsb_hRDkHmclwkjgM=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+#page{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.mainpage{
+    width: 100%;
+    height: 100%;
+}
+/* ป้ายไม้ */
+.logo{
+    position: absolute;
+    top:0%;
+    left:-7%;
+    transition: 1s;
+}
+
+/* ปุ่ม ออกเดินทาง  */
+.gogo{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    border-radius: 30px;
+    background-color: rgb(247, 238, 221);
+    color:black;
+    border:3px solid hsl(180, 42%, 71%);
+    font-size: 25px;
+    font-weight: bold;
+    width:400px;
+    height:60px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30%;
+    left: 8%;
+    transition: 1s;
+    z-index: 10;
+}
+.gogo:hover {
+    background-color: hsl(180, 42%, 50%);
+    color:white;
+    border:3px solid hsl(180, 42%, 80%);
+
+}
+
+/* รูปเรือตรงปุ่ม ออกเดินทาง  */
+.shipicon{
+    position: absolute;
+    bottom:35.5%;
+    left: 23%;
+    cursor: pointer;
+    transition: 2s;
+}
+
+/* ปุ่มโฮม */
+.homeicon{
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    bottom:5%;
+    left: 1%;
+    background: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.homeicon:hover{
+    box-shadow: 0 2px 2px 2px hsl(180, 42%, 20%);
+}
+
+/* Button Group */
+.button_group{
+    position: absolute;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    z-index: -10;
+    transition: 1s;
+}
+.button_group button{
+    width: 50px;
+    height: 50px;
+    margin: 0px 5px 0px 5px;
+    border-radius: 50%;
+    background-color: hsl(210, 100%, 20%);
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button_group button:hover{
+    transform: scale(1.1);
+    background-color: hsl(210, 100%, 80%);
+}
+
+/* เรือแคนูหน้าโฮม  */
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.ship{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* Canoe Ship Translate */
+.canoe_pic{
+    position: absolute;
+    transition: 2s;
+    animation: shake 3s infinite;
+    transform: translateX(50%);
+    margin: 0;
+}
+.canoe_pic2{
+    z-index: -15;
+    position: absolute;
+    transition: 2s;
+    animation: shake 3s infinite;
+    transform: translateX(-250%);
+    opacity: 0;
+}
+
+/* Viking Ship Translate */
+.viking_pic1, .viking_pic2{
+    z-index: -15;
+    width: 35%;
+    position: absolute;
+    transition: 2s;
+    animation: shake 3s infinite;
+    transform: translateX(-250%);
+    opacity: 0;
+}
+/* Cog Ship Translate */
+.cog_pic1, .cog_pic2{
+    z-index: -15;
+    width: 25%;
+    position: absolute;
+    transition: 2s;
+    animation: shake 3s infinite;
+    transform: translateX(-250%);
+    opacity: 0;
+}
+/* Caravel Ship Translate */
+.caravel_pic1, .caravel_pic2{
+    z-index: -15;
+    width: 30%;
+    position: absolute;
+    transition: 2s;
+    animation: shake 3s infinite;
+    transform: translateX(-250%);
+    opacity: 0;
+}
+/* Galley Ship Translate */
+.galley_pic1, .galley_pic2{
+    z-index: -15;
+    width: 50%;
+    position: absolute;
+    transition: 2s;
+    animation: shake 3s infinite;
+    transform: translateX(-250%);
+    opacity: 0;
+}
+/* Steam Ship Translate */
+.steam_pic1, .steam_pic2{
+    z-index: -15;
+    width: 50%;
+    position: absolute;
+    transition: 2s;
+    animation: shake 3s infinite;
+    transform: translateX(-250%);
+    opacity: 0;
+}
+/* Present Translate */
+.present_pic1, .present_pic2{
+    z-index: -15;
+    width: 70%;
+    position: absolute;
+    transition: 2s;
+    animation: shake 3s infinite;
+    transform: translateX(-250%);
+    opacity: 0;
+}
+
+.cloud1{
+    width: 20%;
+    animation:cloudmove 9s infinite alternate;
+}
+.cloud2{
+    width: 15%;
+    position: absolute;
+    top: 4%;
+    right: 25%;
+    animation:cloudmove 10s infinite alternate;
+}
+.cloud3{
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    animation:cloudmove 7s infinite alternate;
+}
+
+/* ไอค่อน next */
+.nexticon{
+    background: transparent;
+    position: absolute;
+    bottom: 30%;
+    right: 5%;
+    border: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.nexticon:hover{
+    animation: buttonkiki 0.6s infinite alternate;
+}
+
+/* All Ship Page */
+.canoepage1, .canoepage2,
+.vikingpage1, .vikingpage2,
+.cogship1, .cogship2,
+.caravelpage1, .caravelpage2,
+.galleypage1, .galleypage2,
+.steampage1, .steampage2,
+.presentpage1, .conclusionpage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ----- Information & Details ----- */
+.canoe_informationbox, .viking_informationbox,
+.cog_informationbox, .caravel_informationbox,
+.galley_informationbox, .steam_informationbox,
+.present_informationbox{
+    width: 40%;
+    position: absolute;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid;
+    top: 5%;
+    transform: translateY(-100px);
+    background-color: rgba(255,255,255,0.8);
+    transition: 1s;
+    opacity: 0;
+    z-index: -10;
+}
+
+.detail{
+    font-size: large;
+}
+/* Ship Picture */
+.picture_area{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.pic_width{
+    width: 100%;
+    max-width: 80%;
+    border-radius: 10px;
+}
+.picture{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 999;
+}
+.picture:hover{
+    transform: scale(1.1);
+}
+.picture:active{
+    transform: scale(5) translateY(25px) translateX(-65px);
+    border-radius: 20px;
+    z-index: 999;
+}
+
+
+/* Quiz */
+.canoe_quiz, .viking_quiz,
+.cog_quiz, .caravel_quiz,
+.galley_quiz ,.steam_quiz{
+    width: 50%;
+    position: absolute;
+    padding: 20px;
+    border-radius: 30px;
+    top: 5%;
+    transform: translateY(-100px);
+    background-color: rgba(255,255,255,0.6);
+    transition: 2s;
+    opacity: 0;
+    z-index: -10;
+}
+.conclution_details{
+    width: 60%;
+    position: absolute;
+    padding: 20px;
+    border-radius: 30px;
+    top: 5%;
+    transform: translateY(-100px);
+    background-color: rgba(255,255,255,0.8);
+    transition: 2s;
+    opacity: 0;
+    z-index: -10;
+}
+
+/* Question & Answer */
+.text_center{
+    text-align: center;
+}
+.answer{
+    display: flex;
+    justify-content: center;
+}
+.ans{
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    margin: 0px 10px 0px 10px;
+    background-color: rgba(255,255,255,0.7);
+    border: 0px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.ans:hover{
+    transform: scale(1.1);
+    background-color: rgba(255,255,255,1);
+}
+
+/* Answer Check */
+.canoeAns1 span::after, .canoeAns2 span::after,
+.vikingAns1 span::after, .vikingAns2 span::after,
+.cogAns1 span::after, .cogAns2 span::after,
+.caravelAns1 span::after, .caravelAns2 span::after,
+.galleyAns1 span::after, .galleyAns2 span::after,
+.steamAns1 span::after, .steamAns2 span::after{
+    content: ' \2714';
+    font-size: 30px;
+    color: red;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+/* ----- /Information & Details ----- */
+
+
+/* อนิเมชันของก้อนเมฆลอยๆ */
+@keyframes cloudmove {
+    from {transform: translateX(0px);}
+    to {transform: translateX(100px);}
+}
+
+/* อนิเมชันปุ่มโดนชี้ดุ๊กดิ๊ก */
+@keyframes buttonkiki {
+    from {transform: translateY(0px);}
+    to {transform: translateY(10px);}
+}
+
+/* เพิ่มอนิเมชั่นการขยับของเรือ */
+@keyframes shake {
+    0%   {bottom: 18%;}
+    50%  {bottom: 15%;}
+    100% {bottom: 18%;}
+}
+
+/* Data-Scene */
+/* Main Page */
+#page:not([data-scene="mainpage"]) .logo{
+    transform: translateY(-800px);
+}
+#page:not([data-scene="mainpage"]) .canoe_pic{
+    transform: translateX(0%);
+}
+#page:not([data-scene="mainpage"]) .gogo{
+    transform: translateX(-1000px);
+}
+#page[data-scene="mainpage"] .nexticon{
+    transform: translateX(200px);
+}
+
+/* Canoe Page */
+#page[data-scene="canoepage1"] .canoe_informationbox{
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="canoepage1"] .canoe_pic{
+    transform: translateX(0%);
+}
+
+#page[data-scene="canoepage2"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="canoepage2"] .canoe_pic2{
+    transform: translateX(0%);
+    opacity: 1;
+}
+#page[data-scene="canoepage2"] .canoe_quiz{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Viking Page */
+#page[data-scene="vikingpage1"] .viking_informationbox{
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="vikingpage1"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="vikingpage1"] .canoe_pic2{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="vikingpage1"] .viking_pic1{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+#page[data-scene="vikingpage2"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="vikingpage2"] .viking_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="vikingpage2"] .viking_pic2{
+    transform: translateX(0%);
+    opacity: 1;
+}
+#page[data-scene="vikingpage2"] .viking_quiz{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Cog Page */
+#page[data-scene="cogship1"] .cog_informationbox{
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="cogship1"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="cogship1"] .viking_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="cogship1"] .viking_pic2{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="cogship1"] .cog_pic1{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+#page[data-scene="cogship2"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="cogship2"] .cog_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="cogship2"] .cog_pic2{
+    transform: translateX(0%);
+    opacity: 1;
+}
+#page[data-scene="cogship2"] .cog_quiz{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Caravel Page */
+#page[data-scene="caravelpage1"] .caravel_informationbox{
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="caravelpage1"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="caravelpage1"] .cog_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="caravelpage1"] .cog_pic2{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="caravelpage1"] .caravel_pic1{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+#page[data-scene="caravelpage2"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="caravelpage2"] .caravel_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="caravelpage2"] .caravel_pic2{
+    transform: translateX(0%);
+    opacity: 1;
+}
+#page[data-scene="caravelpage2"] .caravel_quiz{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Galley Page */
+#page[data-scene="galleypage1"] .galley_informationbox{
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="galleypage1"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="galleypage1"] .caravel_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="galleypage1"] .caravel_pic2{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="galleypage1"] .galley_pic1{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+#page[data-scene="galleypage2"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="galleypage2"] .galley_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="galleypage2"] .galley_pic2{
+    transform: translateX(0%);
+    opacity: 1;
+}
+#page[data-scene="galleypage2"] .galley_quiz{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Steam boat Page */
+#page[data-scene="steampage1"] .steam_informationbox{
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="steampage1"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="steampage1"] .galley_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="steampage1"] .galley_pic2{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="steampage1"] .steam_pic1{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+#page[data-scene="steampage2"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="steampage2"] .steam_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="steampage2"] .steam_pic2{
+    transform: translateX(0%);
+    opacity: 1;
+}
+#page[data-scene="steampage2"] .steam_quiz{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Present Page */
+#page[data-scene="presentpage1"] .present_informationbox{
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="presentpage1"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="presentpage1"] .steam_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="presentpage1"] .steam_pic2{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="presentpage1"] .present_pic1{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+/* Conclusion Page */
+#page[data-scene="conclusionpage"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="conclusionpage"] .present_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="conclusionpage"] .conclution_details{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Check Answer */
+/* --- Canoe --- */
+#canoeQuiz[data-scene="canoeAns1"] .canoeAns1 span::after{
+    opacity: 1;
+}
+#canoeQuiz[data-scene="canoeAns2"] .canoeAns2 span::after{
+    opacity: 1;
+}
+/* --- Viking --- */
+#vikingQuiz[data-scene="vikingAns1"] .vikingAns1 span::after{
+    opacity: 1;
+}
+#vikingQuiz[data-scene="vikingAns2"] .vikingAns2 span::after{
+    opacity: 1;
+}
+/* --- Cog --- */
+#cogQuiz[data-scene="cogAns1"] .cogAns1 span::after{
+    opacity: 1;
+}
+#cogQuiz[data-scene="cogAns2"] .cogAns2 span::after{
+    opacity: 1;
+}
+/* --- Caravels --- */
+#caravelQuiz[data-scene="caravelAns1"] .caravelAns1 span::after{
+    opacity: 1;
+}
+#caravelQuiz[data-scene="caravelAns2"] .caravelAns2 span::after{
+    opacity: 1;
+}
+/* --- Galley --- */
+#galleyQuiz[data-scene="galleyAns1"] .galleyAns1 span::after{
+    opacity: 1;
+}
+#galleyQuiz[data-scene="galleyAns2"] .galleyAns2 span::after{
+    opacity: 1;
+}
+/* --- Steam --- */
+#steamQuiz[data-scene="steamAns1"] .steamAns1 span::after{
+    opacity: 1;
+}
+#steamQuiz[data-scene="steamAns2"] .steamAns2 span::after{
+    opacity: 1;
+}
