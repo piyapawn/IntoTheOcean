@@ -1,0 +1,317 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="conclusion-style.css">
+    <script src="ship.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Into the ocean</title>
+</head>
+
+<body>
+    <div id="page" data-scene="mainpage">
+        <!-------------------------------------------------- Main Page -------------------------------------------------->
+        <div class="mainpage">
+            <img src="cloud1.png" class="cloud1">
+            <img src="cloud2.png" class="cloud2">
+            <img src="cloud1.png" class="cloud3">
+            <div class="home">
+                <button onclick="page.dataset.scene = `canoepage1`, btnGroupShow()" class="gogo">ออกเดินทาง</button>
+                <img src="intoocean1.png" class="logo" alt="logo" width="1000" height="600">
+                <div id="button_Group" class="button_group">
+                    <button onclick="page.dataset.scene = `canoepage1`, pageCount = 0, console.log('Page Count : '+pageCount);"></button>
+                    <button onclick="page.dataset.scene = `vikingpage1`, pageCount = 2, console.log('Page Count : '+pageCount);"></button>
+                    <button onclick="page.dataset.scene = `cogship1`, pageCount = 4, console.log('Page Count : '+pageCount);"></button>
+                    <button onclick="page.dataset.scene = `caravelpage1`, pageCount = 6, console.log('Page Count : '+pageCount);"></button>
+                    <button onclick="page.dataset.scene = `galleypage1`, pageCount = 8, console.log('Page Count : '+pageCount);"></button>
+                    <button onclick="page.dataset.scene = `steampage1`, pageCount = 10, console.log('Page Count : '+pageCount);"></button>
+                    <button onclick="page.dataset.scene = `presentpage1`, pageCount = 12, console.log('Page Count : '+pageCount);"></button>
+                </div>
+            </div>
+            <button class="homeicon" onclick="page.dataset.scene = `mainpage`, resetPage()"> <img src="homeicon.png" style="width: 50px;"> </button>
+            <button id="nextButton" class="nexticon" onclick="nextPage()"><img src="shipicon.png" style="width: 100px; height: 100px;"></button>
+
+            
+        </div>
+
+        <!-------------------------------------------------- Canoe -------------------------------------------------->
+        <div class="canoepage1">
+            <div class="canoe_informationbox">
+                <center><h1>8000 BC Pesse Canoe</h1></center>
+                <p class="detail">เป็นเรือที่เก่าแก่ที่สุดในโลก เรือที่ถูกค้นพบมีความยาวประมาณ 298 ซ.ม. กว้างประมาณ 44 ซ.ม.
+                <br><b>ลักษณะเด่น : </b>สร้างขึ้นจากซุงท่อนเดียว ของต้นสน ช่องสำหรับนั่งตรงกลางขุดด้วยเขากวางหรือ หินแข็ง เคลื่อนที่โดยการใช้ไม้พาย 
+                <br><b>จุดประสงค์ : </b>คาดว่าใช้เพื่อการเดินทาง
+            </p>
+                <div class="picture_area">
+                    <div class="picture">
+                        <img class="pic_width" src="https://archeoloogindeklas.nl/archeos/images/teksten/mst-kanopesse.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="canoe.png" class="canoe_pic">
+            </div>
+        </div>
+
+        <div class="canoepage2">
+            <div class="canoe_quiz text_center">
+                <h1>พื้นที่อยู่อาศัยขาดแคลนอาหาร</h1><br>
+
+                <div id="canoeQuiz" class="answer">
+                    <div class="ans canoeAns1" onclick="answer1 = 'ออกไปชิงอาหารจากหมู่บ้านอื่น'; effect1 = ' Viking ship'; console.log('ผลกระทบ : '+effect1); canoeQuiz.dataset.scene = `canoeAns1`">
+                        <b>ออกไปชิงอาหารจากหมู่บ้านอื่น<span></span></b>
+                    </div>
+                    <div class="ans canoeAns2" onclick="answer1 = 'พยายามอยู่ให้ได้'; effect1 = ''; console.log('ผลกระทบ : '+effect1); canoeQuiz.dataset.scene = `canoeAns2`">
+                        <b>พยายามอยู่ให้ได้<span></span></b>
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="canoe.png" class="canoe_pic2">
+            </div>
+        </div>
+
+        <!-------------------------------------------------- Viking -------------------------------------------------->
+        <div class="vikingpage1">
+            <div class="viking_informationbox">
+                <center><h1>1000 AD Viking</h1></center>
+                <p class="detail">พบในช่วง(c.790 CE - c.1100 CE) มีขนาดใหญ่แต่เบา ความเร็วสูง
+                    <br><b>ลักษณะเด่น : </b>ตัวเรือทำจากไม้ แรกเริ่มไม่มีใบเรือเพราะมีราคาแพงและเกินจำเป็น เคลื่อนที่โดยใช้พายหลายอัน 
+                    <br><b>จุดประสงค์ : </b>เพื่อการทำสงคราม และทำการค้าขายแลกเปลี่ยน ในขนาดเล็กใช้เพื่อตกปลาหรือเดินทางในท้องถิ่น
+                </p>
+                <div class="picture_area">
+                    <div class="picture">
+                        <img class="pic_width" src="https://media-cdn.tripadvisor.com/media/photo-s/12/b0/59/4a/viking-ship-museum.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/901529558816276490/viking.png" class="viking_pic1">
+            </div>
+        </div>
+
+        <div class="vikingpage2">
+            <div class="viking_quiz text_center">
+                <h1>พื้นที่อยู่อาศัยและอาหารไม่พอจำนวนคน</h1><br>
+
+                <div id="vikingQuiz" class="answer">
+                    <div class="ans vikingAns1" onclick="answer2 = 'ใช้ชีวิตในทะเล ดักชิงเสบียงจากเรืออื่น'; effect2 = ' Cog ship'; vikingQuiz.dataset.scene = `vikingAns1`">
+                        <b>ใช้ชีวิตในทะเล ดักชิงเสบียงจากเรืออื่น<span></span></b>
+                    </div>
+                    <div class="ans vikingAns2" onclick="answer2 = 'พยายามอยู่ให้ได้'; effect2 = ''; vikingQuiz.dataset.scene = `vikingAns2`">
+                        <b>พยายามอยู่ให้ได้<span></span></b>
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/901529558816276490/viking.png" class="viking_pic2">
+            </div>
+        </div>
+
+        <!-------------------------------------------------- Cog Ship -------------------------------------------------->
+        <div class="cogship1">
+            <div class="cog_informationbox">
+                <center><h1>1240 AD Cog Ship</h1></center>
+                <p class="detail">พบเห็นครั้งแรกในศัตวรรษที่ 10 และใช้กันอย่างแพร่หลายในศัตวรรษที่ 12
+                    <br><b>ลักษณะเด่น : </b>ตัวเรือทำจาก ไม้โอ๊ค มีเสากระโดงเรือหนึ่งเสาและผ้าใบ มีขนาดใหญ่มาก
+                    <br><b>จุดประสงค์ : </b>ใช้เพื่อการเดินทาง ในการเดินเรือต้องมีกะลาสีเรือเพื่อควบคุมเรือ เรือที่ใหญ่กว่า 240 ton ขึ้นไป มักใช้ในการขนย้ายอุปกรณ์ทางการรบ
+                </p>
+                <div class="picture_area">
+                    <div class="picture">
+                        <img class="pic_width" src="https://lh3.googleusercontent.com/proxy/5n51VPDaAlz27ycqrbF-WoZUPxAItmLsteOzIgeCP6wkPHKdAxSAdM4EW17IZpJEb6CZLBHtYMI9N2bAYmHQl1KcXKpcGN33HpXjZ0ZbxU5VRJdAhd-86CrfJl_2K-85amoKST8O81ov1ASQ-8D9jw" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/901528645049384980/cog.png" class="cog_pic1">
+            </div>
+        </div>
+
+        <div class="cogship2">
+            <div class="cog_quiz text_center">
+                <h1>สงสัยจัง โลกมันกลมหรือแบน?</h1><br>
+
+                <div id="cogQuiz" class="answer">
+                    <div class="ans cogAns1" onclick="answer3 = 'ออกเดินทางสำรวจ'; effect3 = ' Caravel'; cogQuiz.dataset.scene = `cogAns1`">
+                        <b>ออกเดินทางสำรวจ<span></span></b>
+                    </div>
+                    <div class="ans cogAns2" onclick="answer3 = 'น่าจะกลมนะ ไม่เคยตกขอบโลก'; effect3 = ''; cogQuiz.dataset.scene = `cogAns2`">
+                        <b>น่าจะกลมนะ ไม่เคยตกขอบโลก<span></span></b>
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/901528645049384980/cog.png" class="cog_pic2">
+            </div>
+        </div>
+
+        <!-------------------------------------------------- Caravel -------------------------------------------------->
+        <div class="caravelpage1">
+            <div class="caravel_informationbox">
+                <center><h1>1450 AD Caravels</h1></center>
+                <p class="detail">เรือใบน้ำหนักเบา  ใช้อย่างแพร่หลายช่วงศตวรรษที่15 - 17 ในยุโรป เบาและเร็วกว่าเรือใบสเปนในศตวรรษที่ 16
+                    <br><b>ลักษณะเด่น : </b>เสากระโดงเรือ 1 - 3 เสา และใบเรือทรงสามเหลี่ยม
+                    <br><b>จุดประสงค์ : </b>เพื่อการสำรวจ เดินทางไกล และเพื่อการแลกเปลี่ยน
+                </p>
+                <div class="picture_area">
+                    <div class="picture">
+                        <img class="pic_width" src="https://www.fundacionnaovictoria.org/wp-content/uploads/2017/05/carabela_flag.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/886587756313206844/caravel_p.png" class="caravel_pic1">
+            </div>
+        </div>
+
+        <div class="caravelpage2">
+            <div class="caravel_quiz text_center">
+                <h1>เรือที่ใช้อยู่ช้าจัง ไล่ตามเรืออื่นไม่ทันเลย</h1><br>
+
+                <div id="caravelQuiz" class="answer">
+                    <div class="ans caravelAns1" onclick="answer4 = 'ปรับปรุงให้เร็วขึ้น'; effect4 = ' Galley'; caravelQuiz.dataset.scene = `caravelAns1`">
+                        <b>ปรับปรุงให้เร็วขึ้น<span></span></b>
+                    </div>
+                    <div class="ans caravelAns2" onclick="answer4 = 'ก็ยังใช้ได้ ไม่เป็นไรหรอก'; effect4 = ''; caravelQuiz.dataset.scene = `caravelAns2`">
+                        <b>ก็ยังใช้ได้ ไม่เป็นไรหรอก<span></span></b>
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/886587756313206844/caravel_p.png" class="caravel_pic2">
+            </div>
+        </div>
+
+        <!-------------------------------------------------- Galley -------------------------------------------------->
+        <div class="galleypage1">
+            <div class="galley_informationbox">
+                <center><h1>1571 AD Galley</h1></center>
+                <p class="detail">เรือแจว มีต้นกำเนิดจากอารยธรรมการเดินเรือรอบทะเลเมดิเตอร์เรเนียนในช่วงปลายสหัสวรรษที่ 2 ก่อนคริสตกาล และถูกปรับปรุงเพื่อใช้งานในรูปแบบที่หลากหลายจนถึงช่วงต้นศตวรรษที่ 19
+                    <br><b>ลักษณะเด่น : </b>มีลักษณะยาว ลำเรือเรียว หัวเรือแหลม ส่วนมากมีใบเรือช่วยในการแล่น แต่ใช้การพายเป็นหลัก
+                    <br><b>จุดประสงค์ : </b>ใช้เพื่อการรบโดยเฉพาะ เพราะมีความเร็วสูง ใช้ในการแลกเปลี่ยนสินค้า และใช้ในการปล้นของโจรสลัด
+                </p>
+                <div class="picture_area">
+                    <div class="picture">
+                        <img class="pic_width" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Galley-knightshospitaller.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/886591244162199552/gally_p.png" class="galley_pic1">
+            </div>
+        </div>
+
+        <div class="galleypage2">
+            <div class="galley_quiz text_center">
+                <h1>เรือที่ใช้อยู่ใช้คนเยอะเกินไป แถมเหนื่อย ต้องคอยแจวเอง</h1><br>
+
+                <div id="galleyQuiz" class="answer">
+                    <div class="ans galleyAns1"  onclick="answer5 = 'ลองพัฒนาดูซิ'; effect5 = ' Steam boat'; galleyQuiz.dataset.scene = `galleyAns1`">
+                        <b>ลองพัฒนาดูซิ<span></span></b>
+                    </div>
+                    <div class="ans galleyAns2"  onclick="answer5 = 'ลดจำนวนคนพาย ผลัดเวรกัน'; effect5 = ''; galleyQuiz.dataset.scene = `galleyAns2`">
+                        <b>ลดจำนวนคนพาย ผลัดเวรกัน<span></span></b>
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/886591244162199552/gally_p.png" class="galley_pic2">
+            </div>
+        </div>
+
+        <!-------------------------------------------------- Steam boat -------------------------------------------------->
+        <div class="steampage1">
+            <div class="steam_informationbox">
+                <center><h1>1800 AD Steam boat</h1></center>
+                <p class="detail">เรือกลไฟ เรือขนาดเล็กที่ขับเคลื่อนด้วยเครื่องจักรไอน้ำ หรือใบจักรเรือ ในภายหลังมีการพัฒนาเป็นเรือกลไฟขนาดใหญ่(Steamship)
+                    <br><b>ลักษณะเด่น : </b>เรือกลไฟขับเคลื่อนโดยพึ่งพาลมน้อยลง เน้นใช้เครื่องจักรมากขึ้น ได้รับการกล่าวถึงว่าเป็น ตัวขับเคลื่อนสำคัญของการค้าระลอกแรก
+                    <br><b>จุดประสงค์ : </b>ใช้เดินทางในทะเลสาบหรือแม่น้ำ และเพื่อการแลกเปลี่ยนสินค้า
+                </p>
+                <div class="picture_area">
+                    <div class="picture">
+                        <img class="pic_width" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/75/b2/18.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/901528650770427915/a4d3565e584cc76b.png" class="steam_pic1">
+            </div>
+        </div>
+
+        <div class="steampage2">
+            <div class="steam_quiz text_center">
+                <h1>เทคโนโลยีใหม่ๆเยอะมาก</h1><br>
+
+                <div id="steamQuiz" class="answer">
+                    <div class="ans steamAns1" onclick="answer6 = 'ลองนำมาปรับใช้กับเรือ'; effect6 = ' เรือปัจจุบัน'; steamQuiz.dataset.scene = `steamAns1`">
+                        <b>ลองนำมาปรับใช้กับเรือ<span></span></b>
+                    </div>
+                    <div class="ans steamAns2" onclick="answer6 = 'ไม่อยากเสี่ยงเลย'; effect6 = ''; steamQuiz.dataset.scene = `steamAns2`">
+                        <b>ไม่อยากเสี่ยงเลย<span></span></b>
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/901528650770427915/a4d3565e584cc76b.png" class="steam_pic2">
+            </div>
+        </div>
+
+        <!-------------------------------------------------- Present -------------------------------------------------->
+        <div class="presentpage1">
+            <div class="present_informationbox">
+                <center><h1>1844 AD - Present</h1></center>
+                <p class="detail">ในปัจจุบัน เรือที่ใช้มีความหลากอย่างมาก ทั้งพลังงานน้ำมัน พลังงานไอน้ำ และพลังงานนิวเคลียร์
+                    <br><b>ลักษณะเด่น : </b>มีขนาดใหญ่ขึ้นมากกว่าสมัยที่ผ่านมามาก เน้นทางด้านการเดินทางและการค้าขายมากกว่าด้านการรบ รูปลักษณ์ของเรือจึงไม่มีการปรับเปลี่ยนมากนัก เน้นพัฒนาด้านความสะดวกสบายเป็นหลัก และการเพิ่มความจุทั้งสิ่งของ และคน
+                    <br><b>จุดประสงค์ : </b>เพื่อการเดินทางท่องเที่ยว การขนส่งค้าขาย การสงคราม
+                </p>
+                <div class="picture_area">
+                    <div class="picture">
+                        <img class="pic_width" src="https://www.sntravel.net/wp-content/uploads/2018/02/6-10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ship">
+                <img src="https://cdn.discordapp.com/attachments/874526631052587008/886290004815540334/cruise_ship.png" class="present_pic1">
+            </div>
+        </div>
+
+        <!-------------------------------------------------- Conclusion Page -------------------------------------------------->
+        <div class="conclusionpage">
+            <div class="conclution_details">
+                <center><h1>บทสรุป</h1></center>
+                <div  class="detail">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ฤดูหนาวนี้ยาวนานเหลือเกิน อาหารที่มีอยู่เริ่มจะไม่พอแล้ว ผู้คนในหมู่บ้านจึง <b class="answerConclusion">________</b> 
+                        เพื่อเอาชีวิตรอด แต่ไม่ใช่แค่อาหารแล้วสิ ตอนนี้คนในหมู่บ้านก็เยอะขึ้น เริ่มแออัดขึ้นมาแล้ว คุณจึงเสนอว่าเรา <b class="answerConclusion">________</b> กันเถอะ
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เย็นวันนั้นคุณนั่งมองพระอาทิตย์ตกลับขอบฟ้า โลกนี้กลมหรือแบนนะ ทำไมพระอาทิตย์จึงหายไปได้ เมื่อคิดได้สักพัก คุณจึงเกิดความคิดว่า <b class="answerConclusion">________</b>
+                        เช้าวันถัดมา หมู่บ้านโดนพวกไวกิ้งขโมยเสบียงอีกแล้ว เรือของหมู่บ้านคุณตามไม่ทันเลย คุณจึงคิด <b class="answerConclusion">________</b>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เรือในตอนนี้เน้นใช้กำลังคนมาก ทั้งเหนื่อยและหนัก คุณเลย <b class="answerConclusion">________</b>
+                        หมู่บ้านของคุณยังใช้เรือพายอยู่เลย แต่มีเทคโนโลยีใหม่ๆในโลกมากขึ้นแล้ว คุณ <b class="answerConclusion">________</b>
+                    </p><br>
+                    <p>จากการเลือกเส้นทางของคุณ มีเรือใหม่ๆเกิดขึ้นมา ได้แก่ <b id="shipBorn"></b></p>
+
+                    <p class="shipDetails"></p>
+                    <p class="shipDetails"></p>
+                    <p class="shipDetails"></p>
+                    <p class="shipDetails"></p>
+                    <p class="shipDetails"></p>
+                    <p class="shipDetails"></p>
+                    <br>
+                    <p id="answerQuiz"></p>
+                    
+                    <p>
+                        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การตัดสินใจก้าวเล็กๆก้าวหนึ่งของมนุษย์ อาจก่อให้เกิดความเปลี่ยนแปลงอันยิ่งใหญ่ตามมา แม้จะมีนวัตกรรมใหม่ๆเกิดขึ้นมากมาย เกิดความสะดวกสบาย ตอบสนองต่อความต้องการของมนุษย์ แต่สิ่งเหล่านี้ ก็มีผลกระทบอีกมากตามมาเสมอ...</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
