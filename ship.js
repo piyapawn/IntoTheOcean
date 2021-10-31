@@ -1,4 +1,4 @@
-let myPage = ['canoepage2', 'vikingpage1', 'vikingpage2', 'cogship1', 'cogship2', 'caravelpage1', 'caravelpage2', 'galleypage1', 'galleypage2', 'steampage1', 'steampage2', 'presentpage1', 'conclusionpage'];
+let myPage = ['canoepage2', 'vikingpage1', 'vikingpage2', 'cogship1', 'cogship2', 'caravelpage1', 'caravelpage2', 'galleypage1', 'galleypage2', 'steampage1', 'steampage2', 'presentpage1', 'beforeconcluding', 'conclusionpage'];
 let pageCount = 0;
 
 let answer1 = "";

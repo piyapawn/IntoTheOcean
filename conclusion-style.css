@@ -203,7 +203,7 @@ body {
 .cloud2{
     width: 15%;
     position: absolute;
-    top: 4%;
+    top: 8%;
     right: 25%;
     animation:cloudmove 10s infinite alternate;
 }
@@ -235,7 +235,7 @@ body {
 .caravelpage1, .caravelpage2,
 .galleypage1, .galleypage2,
 .steampage1, .steampage2,
-.presentpage1, .conclusionpage{
+.presentpage1, .conclusionpage, .beforeconcluding{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -307,6 +307,35 @@ body {
     top: 5%;
     transform: translateY(-100px);
     background-color: rgba(255,255,255,0.6);
+    transition: 2s;
+    opacity: 0;
+    z-index: -10;
+}
+.concluding-paper{
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    top: 5%;
+    transform: translateY(-100px);
+    transition: 2s;
+    opacity: 0;
+    z-index: -10;
+}
+.beforeconcluding-text{
+    position: absolute;
+    font-size: large;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.beforeconclution_details{
+    width: 60%;
+    position: absolute;
+    padding: 20px;
+    top: 20%;
+    text-align: center;
+    transform: translateY(-100px);
     transition: 2s;
     opacity: 0;
     z-index: -10;
@@ -651,7 +680,21 @@ body {
     transform: translateX(0%);
     opacity: 1;
 }
-
+/* test beforeconcluding */
+#page[data-scene="beforeconcluding"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="beforeconcluding"] .concluding-paper{
+    transform: translateY(-15%);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="beforeconcluding"] .beforeconclution_details{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+}
 /* Conclusion Page */
 #page[data-scene="conclusionpage"] .canoe_pic{
     transform: translateX(250%);
