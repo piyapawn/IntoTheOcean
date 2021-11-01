@@ -20,34 +20,46 @@
                 <button onclick="page.dataset.scene = `canoepage1`, btnGroupShow()" class="gogo">ออกเดินทาง</button>
                 <img src="intoocean1.png" class="logo" alt="logo" width="1000" height="600">
                 <div id="button_Group" class="button_group">
-                    <button onclick="page.dataset.scene = `canoepage1`, pageCount = 0, console.log('Page Count : '+pageCount);"></button>
-                    <button onclick="page.dataset.scene = `vikingpage1`, pageCount = 2, console.log('Page Count : '+pageCount);"></button>
-                    <button onclick="page.dataset.scene = `cogship1`, pageCount = 4, console.log('Page Count : '+pageCount);"></button>
-                    <button onclick="page.dataset.scene = `caravelpage1`, pageCount = 6, console.log('Page Count : '+pageCount);"></button>
-                    <button onclick="page.dataset.scene = `galleypage1`, pageCount = 8, console.log('Page Count : '+pageCount);"></button>
-                    <button onclick="page.dataset.scene = `steampage1`, pageCount = 10, console.log('Page Count : '+pageCount);"></button>
-                    <button onclick="page.dataset.scene = `presentpage1`, pageCount = 12, console.log('Page Count : '+pageCount);"></button>
+                    <button onclick="page.dataset.scene = `canoepage1`, pageCount = 0, console.log('Page Count : '+pageCount);">8000 BC</button>
+                    <button onclick="page.dataset.scene = `vikingpage1`, pageCount = 2, console.log('Page Count : '+pageCount);">1000 AD</button>
+                    <button onclick="page.dataset.scene = `cogship1`, pageCount = 4, console.log('Page Count : '+pageCount);">1240 AD</button>
+                    <button onclick="page.dataset.scene = `caravelpage1`, pageCount = 6, console.log('Page Count : '+pageCount);">1450 AD</button>
+                    <button onclick="page.dataset.scene = `galleypage1`, pageCount = 8, console.log('Page Count : '+pageCount);">1571 AD</button>
+                    <button onclick="page.dataset.scene = `steampage1`, pageCount = 10, console.log('Page Count : '+pageCount);">1800 AD</button>
+                    <button onclick="page.dataset.scene = `presentpage1`, pageCount = 12, console.log('Page Count : '+pageCount);">Present</button>
                 </div>
             </div>
             <button class="homeicon" onclick="page.dataset.scene = `mainpage`, resetPage()"> <img src="homeicon.png" style="width: 50px;"> </button>
+            <button class="music" onclick="playMusic();">♫</button>
             <button id="nextButton" class="nexticon" onclick="nextPage()"><img src="shipicon.png" style="width: 100px; height: 100px;"></button>
-
-            
+            <audio id="myMusic">
+                <source src="oceanbgmusic.mp3" type="audio/mpeg">
+            </audio>
         </div>
 
         <!-------------------------------------------------- Canoe -------------------------------------------------->
         <div class="canoepage1">
             <div class="canoe_informationbox">
+<<<<<<< Updated upstream
                 <center><h1>8000 BC Pesse Canoe</h1></center>
                 <p class="detail">เป็นเรือที่เก่าแก่ที่สุดในโลก เรือที่ถูกค้นพบมีความยาวประมาณ 298 ซ.ม. กว้างประมาณ 44 ซ.ม.
                 <br><b>ลักษณะเด่น : </b>สร้างขึ้นจากซุงท่อนเดียว ของต้นสน ช่องสำหรับนั่งตรงกลางขุดด้วยเขากวางหรือ หินแข็ง เคลื่อนที่โดยการใช้ไม้พาย 
                 <br><b>จุดประสงค์ : </b>คาดว่าใช้เพื่อการเดินทาง
             </p>
                 <div class="picture_area">
+=======
+                <div class="topInfo">
+                    <div class="frontSpace"></div>
+                    <h1 class="texthead">8000 BC - Pesse Canoe</h1>
+>>>>>>> Stashed changes
                     <div class="picture">
                         <img class="pic_width" src="https://archeoloogindeklas.nl/archeos/images/teksten/mst-kanopesse.jpg" alt="">
                     </div>
                 </div>
+                <p class="detail">เป็นเรือที่เก่าแก่ที่สุดในโลก เรือที่ถูกค้นพบมีความยาวประมาณ 298 ซ.ม. กว้างประมาณ 44 ซ.ม.
+                    <br><b>ลักษณะเด่น</b> : สร้างขึ้นจากซุงท่อนเดียว ของต้นสน ช่องสำหรับนั่งตรงกลางขุดด้วยเขากวางหรือ หินแข็ง เคลื่อนที่โดยการใช้ไม้พาย 
+                    <br><b>จุดประสงค์</b> : คาดว่าใช้เพื่อการเดินทาง
+                </p>
             </div>
             <div class="ship">
                 <img src="canoe.png" class="canoe_pic">
@@ -75,16 +87,26 @@
         <!-------------------------------------------------- Viking -------------------------------------------------->
         <div class="vikingpage1">
             <div class="viking_informationbox">
+<<<<<<< Updated upstream
                 <center><h1>1000 AD Viking</h1></center>
                 <p class="detail">พบในช่วง(c.790 CE - c.1100 CE) มีขนาดใหญ่แต่เบา ความเร็วสูง
                     <br><b>ลักษณะเด่น : </b>ตัวเรือทำจากไม้ แรกเริ่มไม่มีใบเรือเพราะมีราคาแพงและเกินจำเป็น เคลื่อนที่โดยใช้พายหลายอัน 
                     <br><b>จุดประสงค์ : </b>เพื่อการทำสงคราม และทำการค้าขายแลกเปลี่ยน ในขนาดเล็กใช้เพื่อตกปลาหรือเดินทางในท้องถิ่น
                 </p>
                 <div class="picture_area">
+=======
+                <div class="topInfo">
+                    <div class="frontSpace"></div>
+                    <h1 class="texthead">1000 AD - Viking</h1>
+>>>>>>> Stashed changes
                     <div class="picture">
                         <img class="pic_width" src="https://media-cdn.tripadvisor.com/media/photo-s/12/b0/59/4a/viking-ship-museum.jpg" alt="">
                     </div>
                 </div>
+                <p class="detail">พบในช่วง(c.790 CE - c.1100 CE) มีขนาดใหญ่แต่เบา ความเร็วสูง
+                    <br><b>ลักษณะเด่น</b> : ตัวเรือทำจากไม้ แรกเริ่มไม่มีใบเรือเพราะมีราคาแพงและเกินจำเป็น เคลื่อนที่โดยใช้พายหลายอัน 
+                    <br><b>จุดประสงค์</b> : เพื่อการทำสงคราม และทำการค้าขายแลกเปลี่ยน ในขนาดเล็กใช้เพื่อตกปลาหรือเดินทางในท้องถิ่น
+                </p>
             </div>
             <div class="ship">
                 <img src="https://cdn.discordapp.com/attachments/874526631052587008/901529558816276490/viking.png" class="viking_pic1">
@@ -112,16 +134,26 @@
         <!-------------------------------------------------- Cog Ship -------------------------------------------------->
         <div class="cogship1">
             <div class="cog_informationbox">
+<<<<<<< Updated upstream
                 <center><h1>1240 AD Cog Ship</h1></center>
                 <p class="detail">พบเห็นครั้งแรกในศัตวรรษที่ 10 และใช้กันอย่างแพร่หลายในศัตวรรษที่ 12
                     <br><b>ลักษณะเด่น : </b>ตัวเรือทำจาก ไม้โอ๊ค มีเสากระโดงเรือหนึ่งเสาและผ้าใบ มีขนาดใหญ่มาก
                     <br><b>จุดประสงค์ : </b>ใช้เพื่อการเดินทาง ในการเดินเรือต้องมีกะลาสีเรือเพื่อควบคุมเรือ เรือที่ใหญ่กว่า 240 ton ขึ้นไป มักใช้ในการขนย้ายอุปกรณ์ทางการรบ
                 </p>
                 <div class="picture_area">
+=======
+                <div class="topInfo">
+                    <div class="frontSpace"></div>
+                    <h1 class="texthead">1240 AD - Cog Ship</h1>
+>>>>>>> Stashed changes
                     <div class="picture">
                         <img class="pic_width" src="https://i.pinimg.com/originals/4c/74/2a/4c742a70699456a639cf794ac26df062.jpg" alt="">
                     </div>
                 </div>
+                <p class="detail">พบเห็นครั้งแรกในศัตวรรษที่ 10 และใช้กันอย่างแพร่หลายในศัตวรรษที่ 12
+                    <br><b>ลักษณะเด่น</b> : ตัวเรือทำจาก ไม้โอ๊ค มีเสากระโดงเรือหนึ่งเสาและผ้าใบ มีขนาดใหญ่มาก
+                    <br><b>จุดประสงค์</b> : ใช้เพื่อการเดินทาง ในการเดินเรือต้องมีกะลาสีเรือเพื่อควบคุมเรือ เรือที่ใหญ่กว่า 240 ton ขึ้นไป มักใช้ในการขนย้ายอุปกรณ์ทางการรบ
+                </p>
             </div>
             <div class="ship">
                 <img src="https://cdn.discordapp.com/attachments/874526631052587008/901528645049384980/cog.png" class="cog_pic1">
@@ -149,16 +181,26 @@
         <!-------------------------------------------------- Caravel -------------------------------------------------->
         <div class="caravelpage1">
             <div class="caravel_informationbox">
+<<<<<<< Updated upstream
                 <center><h1>1450 AD Caravels</h1></center>
                 <p class="detail">เรือใบน้ำหนักเบา  ใช้อย่างแพร่หลายช่วงศตวรรษที่15 - 17 ในยุโรป เบาและเร็วกว่าเรือใบสเปนในศตวรรษที่ 16
                     <br><b>ลักษณะเด่น : </b>เสากระโดงเรือ 1 - 3 เสา และใบเรือทรงสามเหลี่ยม
                     <br><b>จุดประสงค์ : </b>เพื่อการสำรวจ เดินทางไกล และเพื่อการแลกเปลี่ยน
                 </p>
                 <div class="picture_area">
+=======
+                <div class="topInfo">
+                    <div class="frontSpace"></div>
+                    <h1 class="texthead">1450 AD - Caravels</h1>
+>>>>>>> Stashed changes
                     <div class="picture">
                         <img class="pic_width" src="https://www.fundacionnaovictoria.org/wp-content/uploads/2017/05/carabela_flag.jpg" alt="">
                     </div>
                 </div>
+                <p class="detail">เรือใบน้ำหนักเบา  ใช้อย่างแพร่หลายช่วงศตวรรษที่15 - 17 ในยุโรป เบาและเร็วกว่าเรือใบสเปนในศตวรรษที่ 16
+                    <br><b>ลักษณะเด่น</b> : เสากระโดงเรือ 1 - 3 เสา และใบเรือทรงสามเหลี่ยม
+                    <br><b>จุดประสงค์</b> : เพื่อการสำรวจ เดินทางไกล และเพื่อการแลกเปลี่ยน
+                </p>
             </div>
             <div class="ship">
                 <img src="https://cdn.discordapp.com/attachments/874526631052587008/886587756313206844/caravel_p.png" class="caravel_pic1">
@@ -186,16 +228,26 @@
         <!-------------------------------------------------- Galley -------------------------------------------------->
         <div class="galleypage1">
             <div class="galley_informationbox">
+<<<<<<< Updated upstream
                 <center><h1>1571 AD Galley</h1></center>
                 <p class="detail">เรือแจว มีต้นกำเนิดจากอารยธรรมการเดินเรือรอบทะเลเมดิเตอร์เรเนียนในช่วงปลายสหัสวรรษที่ 2 ก่อนคริสตกาล และถูกปรับปรุงเพื่อใช้งานในรูปแบบที่หลากหลายจนถึงช่วงต้นศตวรรษที่ 19
                     <br><b>ลักษณะเด่น : </b>มีลักษณะยาว ลำเรือเรียว หัวเรือแหลม ส่วนมากมีใบเรือช่วยในการแล่น แต่ใช้การพายเป็นหลัก
                     <br><b>จุดประสงค์ : </b>ใช้เพื่อการรบโดยเฉพาะ เพราะมีความเร็วสูง ใช้ในการแลกเปลี่ยนสินค้า และใช้ในการปล้นของโจรสลัด
                 </p>
                 <div class="picture_area">
+=======
+                <div class="topInfo">
+                    <div class="frontSpace"></div>
+                    <h1 class="texthead">1571 AD - Galley</h1>
+>>>>>>> Stashed changes
                     <div class="picture">
                         <img class="pic_width" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Galley-knightshospitaller.jpg" alt="">
                     </div>
                 </div>
+                <p class="detail">เรือแจว มีต้นกำเนิดจากอารยธรรมการเดินเรือรอบทะเลเมดิเตอร์เรเนียนในช่วงปลายสหัสวรรษที่ 2 ก่อนคริสตกาล และถูกปรับปรุงเพื่อใช้งานในรูปแบบที่หลากหลายจนถึงช่วงต้นศตวรรษที่ 19
+                    <br><b>ลักษณะเด่น</b> : มีลักษณะยาว ลำเรือเรียว หัวเรือแหลม ส่วนมากมีใบเรือช่วยในการแล่น แต่ใช้การพายเป็นหลัก
+                    <br><b>จุดประสงค์</b> : ใช้เพื่อการรบโดยเฉพาะ เพราะมีความเร็วสูง ใช้ในการแลกเปลี่ยนสินค้า และใช้ในการปล้นของโจรสลัด
+                </p>
             </div>
             <div class="ship">
                 <img src="https://cdn.discordapp.com/attachments/874526631052587008/886591244162199552/gally_p.png" class="galley_pic1">
@@ -223,16 +275,26 @@
         <!-------------------------------------------------- Steam boat -------------------------------------------------->
         <div class="steampage1">
             <div class="steam_informationbox">
+<<<<<<< Updated upstream
                 <center><h1>1800 AD Steam boat</h1></center>
                 <p class="detail">เรือกลไฟ เรือขนาดเล็กที่ขับเคลื่อนด้วยเครื่องจักรไอน้ำ หรือใบจักรเรือ ในภายหลังมีการพัฒนาเป็นเรือกลไฟขนาดใหญ่(Steamship)
                     <br><b>ลักษณะเด่น : </b>เรือกลไฟขับเคลื่อนโดยพึ่งพาลมน้อยลง เน้นใช้เครื่องจักรมากขึ้น ได้รับการกล่าวถึงว่าเป็น ตัวขับเคลื่อนสำคัญของการค้าระลอกแรก
                     <br><b>จุดประสงค์ : </b>ใช้เดินทางในทะเลสาบหรือแม่น้ำ และเพื่อการแลกเปลี่ยนสินค้า
                 </p>
                 <div class="picture_area">
+=======
+                <div class="topInfo">
+                    <div class="frontSpace"></div>
+                    <h1 class="texthead">1800 AD - Steam boat</h1>
+>>>>>>> Stashed changes
                     <div class="picture">
                         <img class="pic_width" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/75/b2/18.jpg" alt="">
                     </div>
                 </div>
+                <p class="detail">เรือกลไฟ เรือขนาดเล็กที่ขับเคลื่อนด้วยเครื่องจักรไอน้ำ หรือใบจักรเรือ ในภายหลังมีการพัฒนาเป็นเรือกลไฟขนาดใหญ่(Steamship)
+                    <br><b>ลักษณะเด่น</b> : เรือกลไฟขับเคลื่อนโดยพึ่งพาลมน้อยลง เน้นใช้เครื่องจักรมากขึ้น ได้รับการกล่าวถึงว่าเป็น ตัวขับเคลื่อนสำคัญของการค้าระลอกแรก
+                    <br><b>จุดประสงค์</b> : ใช้เดินทางในทะเลสาบหรือแม่น้ำ และเพื่อการแลกเปลี่ยนสินค้า
+                </p>
             </div>
             <div class="ship">
                 <img src="https://cdn.discordapp.com/attachments/874526631052587008/901528650770427915/a4d3565e584cc76b.png" class="steam_pic1">
@@ -260,27 +322,48 @@
         <!-------------------------------------------------- Present -------------------------------------------------->
         <div class="presentpage1">
             <div class="present_informationbox">
+<<<<<<< Updated upstream
                 <center><h1>1844 AD - Present</h1></center>
                 <p class="detail">ในปัจจุบัน เรือที่ใช้มีความหลากอย่างมาก ทั้งพลังงานน้ำมัน พลังงานไอน้ำ และพลังงานนิวเคลียร์
                     <br><b>ลักษณะเด่น : </b>มีขนาดใหญ่ขึ้นมากกว่าสมัยที่ผ่านมามาก เน้นทางด้านการเดินทางและการค้าขายมากกว่าด้านการรบ รูปลักษณ์ของเรือจึงไม่มีการปรับเปลี่ยนมากนัก เน้นพัฒนาด้านความสะดวกสบายเป็นหลัก และการเพิ่มความจุทั้งสิ่งของ และคน
                     <br><b>จุดประสงค์ : </b>เพื่อการเดินทางท่องเที่ยว การขนส่งค้าขาย การสงคราม
                 </p>
                 <div class="picture_area">
+=======
+                <div class="topInfo">
+                    <div class="frontSpace"></div>
+                    <h1 class="texthead">1844 AD - Present</h1>
+>>>>>>> Stashed changes
                     <div class="picture">
                         <img class="pic_width" src="https://www.sntravel.net/wp-content/uploads/2018/02/6-10.jpg" alt="">
                     </div>
                 </div>
+                <p class="detail">ในปัจจุบัน เรือที่ใช้มีความหลากอย่างมาก ทั้งพลังงานน้ำมัน พลังงานไอน้ำ และพลังงานนิวเคลียร์
+                    <br><b>ลักษณะเด่น</b> : มีขนาดใหญ่ขึ้นมากกว่าสมัยที่ผ่านมามาก เน้นทางด้านการเดินทางและการค้าขายมากกว่าด้านการรบ รูปลักษณ์ของเรือจึงไม่มีการปรับเปลี่ยนมากนัก เน้นพัฒนาด้านความสะดวกสบายเป็นหลัก และการเพิ่มความจุทั้งสิ่งของ และคน
+                    <br><b>จุดประสงค์</b> : เพื่อการเดินทางท่องเที่ยว การขนส่งค้าขาย การสงคราม
+                </p>
             </div>
             <div class="ship">
                 <img src="https://cdn.discordapp.com/attachments/874526631052587008/886290004815540334/cruise_ship.png" class="present_pic1">
             </div>
         </div>
+<<<<<<< Updated upstream
 
+=======
+        <!-------------------------------------------------- before concluding -------------------------------------------------->
+        <div class="beforeconcluding">
+            <div class="beforeconclution_details">
+                <div  class="detail">
+                    <span class="textfade"></span>
+                </div>
+            </div>
+        </div>
+>>>>>>> Stashed changes
         <!-------------------------------------------------- Conclusion Page -------------------------------------------------->
         <div class="conclusionpage">
             <div class="conclution_details">
                 <center><h1>บทสรุป</h1></center>
-                <div  class="detail">
+                <div class="detail">
                     <p>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ฤดูหนาวนี้ยาวนานเหลือเกิน อาหารที่มีอยู่เริ่มจะไม่พอแล้ว ผู้คนในหมู่บ้านจึง <b class="answerConclusion">________</b> 
                         เพื่อเอาชีวิตรอด แต่ไม่ใช่แค่อาหารแล้วสิ ตอนนี้คนในหมู่บ้านก็เยอะขึ้น เริ่มแออัดขึ้นมาแล้ว คุณจึงเสนอว่าเรา <b class="answerConclusion">________</b> กันเถอะ
@@ -311,7 +394,25 @@
             </div>
         </div>
 
+<<<<<<< Updated upstream
     </div>
+=======
+    
+    <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop">
+          <div class="wave waveTop" style="background-image: url('wave-bot.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div class="wave waveMiddle" style="background-image: url('wave-bot.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+          <div class="wave waveBottom" style="background-image: url('wave-bot.png');"></div>
+        </div>
+    </div>
+    <div class="bottomwave"></div>
+
+</div>
+>>>>>>> Stashed changes
 
 </body>
 </html>

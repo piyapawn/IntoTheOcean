@@ -61,6 +61,7 @@ body {
     left: 23%;
     cursor: pointer;
     transition: 2s;
+    z-index: -1;
 }
 
 /* ปุ่มโฮม */
@@ -68,14 +69,46 @@ body {
     width: 100px;
     height: 70px;
     position: absolute;
+<<<<<<< Updated upstream
     bottom:5%;
     left: 1%;
     background: white;
+=======
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 30;
+    border: 0px;
+>>>>>>> Stashed changes
     border-radius: 30px;
     cursor: pointer;
+    transition: 0.25s;
 }
 .homeicon:hover{
-    box-shadow: 0 2px 2px 2px hsl(180, 42%, 20%);
+    box-shadow: 0 2px 2px 2px hsl(210, 100%, 20%);
+}
+.homeicon:active{
+    box-shadow: 0 0px 0px 0px hsl(210, 100%, 20%);
+}
+.music{
+    font-size: 3rem;
+    text-decoration: line-through;
+    color: rgb(42, 97, 199);
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    bottom: 2rem;
+    left: 10rem;
+    z-index: 30;
+    border: 0px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.music:hover{
+    box-shadow: 0 2px 2px 2px hsl(210, 100%, 20%);
+}
+.music:active{
+    box-shadow: 0 0px 0px 0px hsl(210, 100%, 20%);
 }
 
 /* Button Group */
@@ -83,7 +116,7 @@ body {
     position: absolute;
     width: 100%;
     margin: 10px 0px 10px 0px;
-    bottom: 0;
+    bottom: 1.4rem;
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -91,18 +124,21 @@ body {
     transition: 1s;
 }
 .button_group button{
-    width: 50px;
+    width: 100px;
     height: 50px;
     margin: 0px 5px 0px 5px;
-    border-radius: 50%;
+    border-radius: 50px;
     background-color: hsl(210, 100%, 20%);
-    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    border: 0px;
     cursor: pointer;
     transition: 0.5s;
 }
 .button_group button:hover{
     transform: scale(1.1);
     background-color: hsl(210, 100%, 80%);
+    color: hsl(210, 100%, 20%);
 }
 
 /* เรือแคนูหน้าโฮม  */
@@ -120,6 +156,7 @@ body {
 }
 /* Canoe Ship Translate */
 .canoe_pic{
+    z-index: 15;
     position: absolute;
     transition: 2s;
     animation: shake 3s infinite;
@@ -127,17 +164,21 @@ body {
     margin: 0;
 }
 .canoe_pic2{
-    z-index: -15;
+    z-index: 15;
     position: absolute;
     transition: 2s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
+<<<<<<< Updated upstream
+=======
+    z-index: 15;
+>>>>>>> Stashed changes
 }
 
 /* Viking Ship Translate */
 .viking_pic1, .viking_pic2{
-    z-index: -15;
+    z-index: 15;
     width: 35%;
     position: absolute;
     transition: 2s;
@@ -147,7 +188,7 @@ body {
 }
 /* Cog Ship Translate */
 .cog_pic1, .cog_pic2{
-    z-index: -15;
+    z-index: 15;
     width: 25%;
     position: absolute;
     transition: 2s;
@@ -157,7 +198,7 @@ body {
 }
 /* Caravel Ship Translate */
 .caravel_pic1, .caravel_pic2{
-    z-index: -15;
+    z-index: 15;
     width: 30%;
     position: absolute;
     transition: 2s;
@@ -167,30 +208,30 @@ body {
 }
 /* Galley Ship Translate */
 .galley_pic1, .galley_pic2{
-    z-index: -15;
+    z-index: 15;
     width: 50%;
     position: absolute;
-    transition: 2s;
+    transition: 5s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
 }
 /* Steam Ship Translate */
 .steam_pic1, .steam_pic2{
-    z-index: -15;
+    z-index: 15;
     width: 50%;
     position: absolute;
-    transition: 2s;
+    transition: 5s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
 }
 /* Present Translate */
 .present_pic1, .present_pic2{
-    z-index: -15;
+    z-index: 15;
     width: 70%;
     position: absolute;
-    transition: 2s;
+    transition: 5s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
@@ -246,6 +287,7 @@ body {
 .cog_informationbox, .caravel_informationbox,
 .galley_informationbox, .steam_informationbox,
 .present_informationbox{
+<<<<<<< Updated upstream
     width: 40%;
     position: absolute;
     padding: 20px;
@@ -259,8 +301,54 @@ body {
     z-index: -10;
 }
 
+=======
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    padding: 10px;
+    padding-left: 110px;
+    padding-right: 110px;
+    border-radius: 20px;
+    top: 5%;
+    transform: translateY(-100px);
+    background: url(paper10.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+    opacity: 0;
+    z-index: -10;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
+}
+.frontSpace{
+    width: 120px;
+    height: 120px;
+}
+.texthead{
+    color: #111; 
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 50px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center;
+}
+.topInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+>>>>>>> Stashed changes
 .detail{
-    font-size: large;
+    font-size: 1.1vw;
+    text-shadow: 3px 3px 5px white;
+    font-weight: bold;
+}
+.detail b{
+    text-decoration-line: underline;
+    font-size: 1.1vw;
+    text-shadow: 3px 3px 5px hsl(0, 0%, 100%);
+    font-weight: bold;
 }
 /* Ship Picture */
 .picture_area{
@@ -290,7 +378,7 @@ body {
     transform: scale(1.1);
 }
 .picture:active{
-    transform: scale(5) translateY(25px) translateX(-65px);
+    transform: scale(4.5) translateY(45px) translateX(45px);
     border-radius: 20px;
     z-index: 999;
 }
@@ -312,7 +400,7 @@ body {
     z-index: -10;
 }
 .conclution_details{
-    width: 60%;
+    width: 80%;
     position: absolute;
     padding: 20px;
     border-radius: 30px;
@@ -322,6 +410,9 @@ body {
     transition: 2s;
     opacity: 0;
     z-index: -10;
+}
+.conclution_details .detail{
+    font-size: 1vw;
 }
 
 /* Question & Answer */
@@ -333,7 +424,7 @@ body {
     justify-content: center;
 }
 .ans{
-    font-size: 20px;
+    font-size: 22px;
     width: 100%;
     padding: 20px;
     margin: 0px 10px 0px 10px;
@@ -653,18 +744,45 @@ body {
 }
 
 /* Conclusion Page */
-#page[data-scene="conclusionpage"] .canoe_pic{
+#page[data-scene="beforeconcluding"] .canoe_pic{
     transform: translateX(250%);
     opacity: 0;
 }
-#page[data-scene="conclusionpage"] .present_pic1{
+#page[data-scene="beforeconcluding"] .present_pic1{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="beforeconcluding"] .concluding-paper{
+    transform: translateY(-15%);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="beforeconcluding"] .beforeconclution_details{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 30;
+}
+#page[data-scene="beforeconcluding"] .button_group button{
+    opacity: 0;
+    
+}
+#page[data-scene="beforeconcluding"] .textfade::before{
+    animation: animate linear 24s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+/* Conclusion Page */
+#page[data-scene="conclusionpage"] .canoe_pic{
     transform: translateX(250%);
     opacity: 0;
 }
 #page[data-scene="conclusionpage"] .conclution_details{
     transform: translateY(0%);
     opacity: 1;
-    z-index: 10;
+    z-index: 40;
 }
 
 /* Check Answer */
@@ -709,4 +827,164 @@ body {
 }
 #steamQuiz[data-scene="steamAns2"] .steamAns2 span::after{
     opacity: 1;
+<<<<<<< Updated upstream
+=======
+}
+
+  
+
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    height: 40%;
+    left: 0;
+    right: 0;
+    bottom:-140px;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    
+}
+.bgTop {
+    z-index: -3;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: -2;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 20;
+    opacity: 0.75;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 30%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    z-index: -1;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+.bottomwave{
+    height: 150px;
+    width: 100%;
+    bottom: 0rem;
+    background-color: hsl(175, 65%, 50%);
+    position: absolute;
+    z-index: -1;
+}
+
+
+.concluding-paper{
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    top: 5%;
+    transform: translateY(-100px);
+    transition: 2s;
+    opacity: 0;
+    z-index: -10;
+}
+.beforeconclution_details{
+    width: 80%;
+    position: absolute;
+    padding: 20px;
+    top: 30%;
+    text-align: center;
+    transform: translateY(-100px);
+    transition: 2s;
+    opacity: 0;
+    z-index: -10;
+}
+
+.textfade::before{
+    content: "เหตุการณ์มากมายเกิดขึ้นในการเดินทางของคุณ";
+    padding-left: 10px;
+    font-size: 60px;
+    font-family: 'Pattaya', sans-serif;
+    text-shadow: 4px 3px 4px #fff, 2px 10px 0px rgba(0,0,0,0.15);
+}
+@keyframes animate {
+    0%{
+        content: "เหตุการณ์มากมายเกิดขึ้นในการเดินทางของคุณ";
+        opacity: 1;
+    }
+    10%{
+        opacity: 0;
+    }
+    20% {
+        content: "การตัดสินใจในชั่ววินาที มีสิ่งที่ตามมาเสมอ";
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        content: "เเม้จะเป็นเพียงการตัดสินใจเล็กๆ เเต่ก็อาจก่อให้เกิดการเปลี่ยนแปลงครั้งยิ่งใหญ่";
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        content: "สิ่งนี้คือฟันเฟืองตัวน้อยๆที่คอยขับเคลื่อนอารยธรรมของมนุษยชาติ";
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    80% {
+        content: "ลองคิดดูสิว่าที่ผ่านมามีการตัดสินใจของคุณครั้งไหนบ้างที่ทำให้เกิดการเปลี่ยนเเปลงครั้งยิ่งใหญ่...";
+        opacity: 1;
+        white-space: pre-wrap;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        content: "กดไปต่อเพื่อ \A ดูสรุปการเดินทางของคุณ \A\A";
+        opacity: 1;
+        white-space: pre-wrap;
+    }
+>>>>>>> Stashed changes
 }
