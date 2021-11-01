@@ -225,7 +225,7 @@ body {
 .nexticon {
   background: transparent;
   position: absolute;
-  bottom: 30%;
+  bottom: 33%;
   right: 5%;
   border: none;
   cursor: pointer;
@@ -851,8 +851,7 @@ body {
   opacity: 0;
 }
 #page[data-scene="beforeconcluding"] .textfade::before {
-  animation: animate linear 20s;
-  animation: animate linear 10s;
+  animation: animate linear 16s;
   animation-delay: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -869,45 +868,63 @@ body {
   z-index: -10;
 }
 .beforeconclution_details {
-  width: 60%;
+  width: 80%;
   position: absolute;
   padding: 20px;
-  top: 20%;
+  top: 30%;
   text-align: center;
   transform: translateY(-100px);
   transition: 2s;
   opacity: 0;
   z-index: -10;
 }
+
 .textfade::before {
   content: "เหตุการณ์มากมายเกิดขึ้นในการเดินทางของคุณ";
   padding-left: 10px;
+  font-size: 60px;
+  font-family: "Pattaya", sans-serif;
 }
 @keyframes animate {
-  /* 0% {
-    content: "เหตุการณ์มากมายเกิด \A ขึ้นในการเดินทาง \A ของคุณ";
-    white-space: pre-wrap;
-    opacity: 1;
-  }
-  50% {
-    content: "แม้จะมีนวัตกรรมใหม่ๆขึ้นมากมาย เกิดความสะดวกสบาย ตอบสนองต่อความต้องการของมนุษย์ แต่สิ่งเหล่านี้ ก็มีผลกระทบอีกมากตามมาเสมอ...";
-    opacity: 1;
-  } */
   0% {
+    content: "เหตุการณ์มากมายเกิดขึ้นในการเดินทางของคุณ";
     opacity: 1;
   }
-  25% {
+  10% {
     opacity: 0;
   }
-  50% {
+  20% {
     content: "การตัดสินใจในชั่ววินาที มีสิ่งที่ตามมาเสมอ";
     opacity: 1;
   }
-  75% {
+  30% {
+    opacity: 0;
+  }
+  40% {
+    content: "เเม้จะเป็นเพียงการตัดสินใจเล็กๆ เเต่ก็อาจก่อให้เกิดการเปลี่ยนแปลงครั้งยิ่งใหญ่";
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    content: "สิ่งนี้คือฟันเฟืองตัวน้อยๆที่คอยขับเคลื่อนอารยธรรมของมนุษยชาติ";
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    content: "ลองคิดดูสิว่าที่ผ่านมามีการตัดสินใจของคุณครั้งไหนบ้างที่ทำให้เกิดการเปลี่ยนเเปลงครั้งยิ่งใหญ่...";
+    opacity: 1;
+    white-space: pre-wrap;
+  }
+  90% {
     opacity: 0;
   }
   100% {
-    content: "แม้จะมีนวัตกรรมใหม่ๆขึ้นมากมาย เกิดความสะดวกสบาย ตอบสนองต่อความต้องการของมนุษย์ แต่สิ่งเหล่านี้ ก็มีผลกระทบอีกมากตามมาเสมอ...";
+    content: "กดไปต่อเพื่อ \A ดูสรุปการเดินทางของคุณ \A\A                                                                                                    ➜";
     opacity: 1;
+    white-space: pre-wrap;
   }
 }
