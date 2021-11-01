@@ -823,7 +823,10 @@ body {
     
 }
 #page[data-scene="beforeconcluding"] .textfade::before{
-    animation: animate linear 20s;
+    animation: animate linear 10s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     
 }
 
@@ -849,7 +852,7 @@ body {
     z-index: -10;
 }
 .textfade::before{
-    content: "แม้จะมีนวัตกรรมใหม่ๆขึ้นมากมาย เกิดความสะดวกสบาย ตอบสนองต่อความต้องการของมนุษย์ แต่สิ่งเหล่านี้ ก็มีผลกระทบอีกมากตามมาเสมอ...";
+    content: "เหตุการณ์มากมายเกิดขึ้นในการเดินทางของคุณ";
     padding-left: 10px;
 }
 @keyframes animate {
@@ -858,27 +861,13 @@ body {
         opacity: 1;
     }
     25%{
-        content: "เหตุการณ์มากมายเกิดขึ้นในการเดินทางของคุณ";
-        opacity: 1;
-    }
-    30%{
-        content: "เหตุการณ์มากมายเกิดขึ้นในการเดินทางของคุณ";
-        opacity: 0;
-    }
-    60% {
-        content: "การตัดสินใจในชั่ววินาที มีสิ่งที่ตามมาเสมอ";
         opacity: 0;
     }
     50% {
         content: "การตัดสินใจในชั่ววินาที มีสิ่งที่ตามมาเสมอ";
         opacity: 1;
     }
-    80% {
-        content: "การตัดสินใจในชั่ววินาที มีสิ่งที่ตามมาเสมอ";
-        opacity: 0;
-    }
-    90% {
-        content: "แม้จะมีนวัตกรรมใหม่ๆขึ้นมากมาย เกิดความสะดวกสบาย ตอบสนองต่อความต้องการของมนุษย์ แต่สิ่งเหล่านี้ ก็มีผลกระทบอีกมากตามมาเสมอ...";
+    75% {
         opacity: 0;
     }
     100% {
