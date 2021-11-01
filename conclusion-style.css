@@ -68,9 +68,9 @@ body {
     width: 100px;
     height: 70px;
     position: absolute;
-    bottom:5%;
+    top:10%;
     left: 1%;
-    background: white;
+    z-index: 30px;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -121,18 +121,20 @@ body {
 /* Canoe Ship Translate */
 .canoe_pic{
     position: absolute;
-    transition: 2s;
+    transition: 5s;
     animation: shake 3s infinite;
     transform: translateX(50%);
     margin: 0;
+    z-index: -1;
 }
 .canoe_pic2{
     z-index: -15;
     position: absolute;
-    transition: 2s;
+    transition: 5s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
+    z-index: -1;
 }
 
 /* Viking Ship Translate */
@@ -140,7 +142,7 @@ body {
     z-index: -15;
     width: 35%;
     position: absolute;
-    transition: 2s;
+    transition: 5s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
@@ -150,7 +152,7 @@ body {
     z-index: -15;
     width: 25%;
     position: absolute;
-    transition: 2s;
+    transition: 5s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
@@ -160,7 +162,7 @@ body {
     z-index: -15;
     width: 30%;
     position: absolute;
-    transition: 2s;
+    transition: 5s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
@@ -203,7 +205,7 @@ body {
 .cloud2{
     width: 15%;
     position: absolute;
-    top: 8%;
+    top: 4%;
     right: 25%;
     animation:cloudmove 10s infinite alternate;
 }
@@ -235,7 +237,7 @@ body {
 .caravelpage1, .caravelpage2,
 .galleypage1, .galleypage2,
 .steampage1, .steampage2,
-.presentpage1, .conclusionpage, .beforeconcluding{
+.presentpage1, .conclusionpage,.beforeconcluding{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -246,19 +248,27 @@ body {
 .cog_informationbox, .caravel_informationbox,
 .galley_informationbox, .steam_informationbox,
 .present_informationbox{
-    width: 40%;
+    width: 50%;
     position: absolute;
-    padding: 20px;
-    border-radius: 30px;
-    border: 2px solid;
+    padding: 30px;
+    padding-left: 110px;
+    padding-right: 50px;
+    border-radius: 50px;
     top: 5%;
     transform: translateY(-100px);
-    background-color: rgba(255,255,255,0.8);
+    background: url(paper10.png);
     transition: 1s;
     opacity: 0;
     z-index: -10;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
 }
-
+.texthead { color: #111; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 60px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center; }
 .detail{
     font-size: large;
 }
@@ -306,39 +316,11 @@ body {
     border-radius: 30px;
     top: 5%;
     transform: translateY(-100px);
-    background-color: rgba(255,255,255,0.6);
+    background:url(paper9.png);
     transition: 2s;
     opacity: 0;
     z-index: -10;
-}
-.concluding-paper{
-    position: absolute;
-    padding: 20px;
-    width: 50%;
-    top: 5%;
-    transform: translateY(-100px);
-    transition: 2s;
-    opacity: 0;
-    z-index: -10;
-}
-.beforeconcluding-text{
-    position: absolute;
-    font-size: large;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-.beforeconclution_details{
-    width: 60%;
-    position: absolute;
-    padding: 20px;
-    top: 20%;
-    text-align: center;
-    transform: translateY(-100px);
-    transition: 2s;
-    opacity: 0;
-    z-index: -10;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
 }
 .conclution_details{
     width: 60%;
@@ -371,10 +353,11 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: 0.25s;
+    background: url(paper7.png);
+   
 }
 .ans:hover{
     transform: scale(1.1);
-    background-color: rgba(255,255,255,1);
 }
 
 /* Answer Check */
@@ -680,21 +663,7 @@ body {
     transform: translateX(0%);
     opacity: 1;
 }
-/* test beforeconcluding */
-#page[data-scene="beforeconcluding"] .canoe_pic{
-    transform: translateX(250%);
-    opacity: 0;
-}
-#page[data-scene="beforeconcluding"] .concluding-paper{
-    transform: translateY(-15%);
-    opacity: 1;
-    z-index: 10;
-}
-#page[data-scene="beforeconcluding"] .beforeconclution_details{
-    transform: translateY(0%);
-    opacity: 1;
-    z-index: 10;
-}
+
 /* Conclusion Page */
 #page[data-scene="conclusionpage"] .canoe_pic{
     transform: translateX(250%);
@@ -752,4 +721,126 @@ body {
 }
 #steamQuiz[data-scene="steamAns2"] .steamAns2 span::after{
     opacity: 1;
+}
+
+  
+
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    height: 40%;
+    left: 0;
+    right: 0;
+    bottom:-140px;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    
+}
+.bgTop {
+    z-index: -3;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: -2;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: -1;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 30%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    z-index: -1;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+.bottomwave{
+    height: 150px;
+    width: 100%;
+    bottom: -10px;
+    background-color: #0080da;
+    position: absolute;
+    z-index: -1;
+}
+#page[data-scene="beforeconcluding"] .canoe_pic{
+    transform: translateX(250%);
+    opacity: 0;
+}
+#page[data-scene="beforeconcluding"] .concluding-paper{
+    transform: translateY(-15%);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="beforeconcluding"] .beforeconclution_details{
+    transform: translateY(0%);
+    opacity: 1;
+    z-index: 10;
+}
+#page[data-scene="beforeconcluding"] .button_group button{
+    opacity: 0;
+    
+}
+
+.concluding-paper{
+    position: absolute;
+    padding: 20px;
+    width: 50%;
+    top: 5%;
+    transform: translateY(-100px);
+    transition: 2s;
+    opacity: 0;
+    z-index: -10;
+}
+.beforeconclution_details{
+    width: 60%;
+    position: absolute;
+    padding: 20px;
+    top: 20%;
+    text-align: center;
+    transform: translateY(-100px);
+    transition: 2s;
+    opacity: 0;
+    z-index: -10;
 }
