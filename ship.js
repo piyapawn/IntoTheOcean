@@ -56,10 +56,29 @@ function resetPage(){
   document.querySelector('#steamQuiz').dataset.scene = "";
 }
 
+var playpauseCount = 0;
+function playMusic(){
+  var music = document.getElementById("myMusic");
+  var musicIcon = document.getElementsByClassName("music");
+  if(playpauseCount%2 == 0){
+    music.play();
+    musicIcon[0].style.textDecoration = "none";
+    console.log(playpauseCount);
+    console.log("play");
+  }
+  else if(playpauseCount%2 == 1){
+    music.pause();
+    musicIcon[0].style.textDecoration = "line-through";
+    console.log(playpauseCount);
+    console.log("pause");
+  }
+  playpauseCount++;
+}
+
 function btnGroupShow(){
   let buttonGroup = document.getElementById("button_Group");
   buttonGroup.style.opacity = "1";
-  buttonGroup.style.zIndex = "10";
+  buttonGroup.style.zIndex = "30";
 
   document.querySelector('#page').dataset.active = 1;
 }
