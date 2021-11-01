@@ -220,7 +220,7 @@ body {
 .nexticon{
     background: transparent;
     position: absolute;
-    bottom: 28%;
+    bottom: 33%;
     right: 5%;
     border: none;
     cursor: pointer;
@@ -844,7 +844,7 @@ body {
     width: 80%;
     position: absolute;
     padding: 20px;
-    top: 20%;
+    top: 30%;
     text-align: center;
     transform: translateY(-100px);
     transition: 2s;
@@ -896,7 +896,7 @@ body {
         opacity: 0;
     }
     100% {
-        content: "กดไปต่อเพื่อ \A ดูสรุปการเดินทางของคุณ \A\A\A                                                                                                    ➜";
+        content: "กดไปต่อเพื่อ \A ดูสรุปการเดินทางของคุณ \A\A                                                                                                    ➜";
         opacity: 1;
         white-space: pre-wrap;
     }
