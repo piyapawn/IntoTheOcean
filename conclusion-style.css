@@ -153,7 +153,7 @@ body {
 .canoe_pic{
     z-index: 15;
     position: absolute;
-    transition: 2s;
+    transition: 3s;
     animation: shake 3s infinite;
     transform: translateX(50%);
     margin: 0;
@@ -161,7 +161,7 @@ body {
 .canoe_pic2{
     z-index: 15;
     position: absolute;
-    transition: 2s;
+    transition: 3s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
@@ -173,7 +173,7 @@ body {
     z-index: 15;
     width: 35%;
     position: absolute;
-    transition: 2s;
+    transition: 3s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
@@ -183,7 +183,7 @@ body {
     z-index: 15;
     width: 25%;
     position: absolute;
-    transition: 2s;
+    transition: 3s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
@@ -193,7 +193,7 @@ body {
     z-index: 15;
     width: 30%;
     position: absolute;
-    transition: 2s;
+    transition: 3s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
@@ -203,7 +203,7 @@ body {
     z-index: 15;
     width: 50%;
     position: absolute;
-    transition: 5s;
+    transition: 3s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
@@ -213,7 +213,7 @@ body {
     z-index: 15;
     width: 50%;
     position: absolute;
-    transition: 5s;
+    transition: 3s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
@@ -223,7 +223,7 @@ body {
     z-index: 15;
     width: 70%;
     position: absolute;
-    transition: 5s;
+    transition: 3s;
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
