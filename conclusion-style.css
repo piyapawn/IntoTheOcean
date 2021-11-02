@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 body {
     font-family: 'IBM Plex Sans Thai', sans-serif;
@@ -69,16 +70,10 @@ body {
     width: 100px;
     height: 70px;
     position: absolute;
-<<<<<<< Updated upstream
-    bottom:5%;
-    left: 1%;
-    background: white;
-=======
     bottom: 2rem;
     left: 2rem;
     z-index: 30;
     border: 0px;
->>>>>>> Stashed changes
     border-radius: 30px;
     cursor: pointer;
     transition: 0.25s;
@@ -170,10 +165,7 @@ body {
     animation: shake 3s infinite;
     transform: translateX(-250%);
     opacity: 0;
-<<<<<<< Updated upstream
-=======
     z-index: 15;
->>>>>>> Stashed changes
 }
 
 /* Viking Ship Translate */
@@ -263,6 +255,7 @@ body {
     right: 5%;
     border: none;
     cursor: pointer;
+    z-index: 50;
     transition: 1.5s;
 }
 .nexticon:hover{
@@ -276,7 +269,8 @@ body {
 .caravelpage1, .caravelpage2,
 .galleypage1, .galleypage2,
 .steampage1, .steampage2,
-.presentpage1, .conclusionpage{
+.presentpage1, .conclusionpage,
+.beforeconcluding{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -287,21 +281,6 @@ body {
 .cog_informationbox, .caravel_informationbox,
 .galley_informationbox, .steam_informationbox,
 .present_informationbox{
-<<<<<<< Updated upstream
-    width: 40%;
-    position: absolute;
-    padding: 20px;
-    border-radius: 30px;
-    border: 2px solid;
-    top: 5%;
-    transform: translateY(-100px);
-    background-color: rgba(255,255,255,0.8);
-    transition: 1s;
-    opacity: 0;
-    z-index: -10;
-}
-
-=======
     width: 50%;
     height: 40%;
     position: absolute;
@@ -338,7 +317,6 @@ body {
     display: flex;
     justify-content: space-between;
 }
->>>>>>> Stashed changes
 .detail{
     font-size: 1.1vw;
     text-shadow: 3px 3px 5px white;
@@ -394,10 +372,11 @@ body {
     border-radius: 30px;
     top: 5%;
     transform: translateY(-100px);
-    background-color: rgba(255,255,255,0.6);
+    background:url(paper9.png);
     transition: 2s;
     opacity: 0;
     z-index: -10;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
 }
 .conclution_details{
     width: 80%;
@@ -428,7 +407,7 @@ body {
     width: 100%;
     padding: 20px;
     margin: 0px 10px 0px 10px;
-    background-color: rgba(255,255,255,0.7);
+    background: url(paper7.png);
     border: 0px solid black;
     border-radius: 20px;
     cursor: pointer;
@@ -436,7 +415,6 @@ body {
 }
 .ans:hover{
     transform: scale(1.1);
-    background-color: rgba(255,255,255,1);
 }
 
 /* Answer Check */
@@ -448,7 +426,7 @@ body {
 .steamAns1 span::after, .steamAns2 span::after{
     content: ' \2714';
     font-size: 30px;
-    color: red;
+    color: black;
     opacity: 0;
     transition: 0.25s;
 }
@@ -771,7 +749,7 @@ body {
     animation-delay: 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
+    opacity: 1;
 }
 
 /* Conclusion Page */
@@ -827,12 +805,7 @@ body {
 }
 #steamQuiz[data-scene="steamAns2"] .steamAns2 span::after{
     opacity: 1;
-<<<<<<< Updated upstream
-=======
 }
-
-  
-
 
 @keyframes move_wave {
     0% {
@@ -941,8 +914,9 @@ body {
     content: "เหตุการณ์มากมายเกิดขึ้นในการเดินทางของคุณ";
     padding-left: 10px;
     font-size: 60px;
-    font-family: 'Pattaya', sans-serif;
+    font-family: 'Sriracha', cursive;
     text-shadow: 4px 3px 4px #fff, 2px 10px 0px rgba(0,0,0,0.15);
+    opacity: 0;
 }
 @keyframes animate {
     0%{
@@ -982,9 +956,8 @@ body {
         opacity: 0;
     }
     100% {
-        content: "กดไปต่อเพื่อ \A ดูสรุปการเดินทางของคุณ \A\A";
+        content: "กดไปต่อเพื่อ\Aดูสรุปการเดินทางของคุณ";
         opacity: 1;
         white-space: pre-wrap;
     }
->>>>>>> Stashed changes
 }

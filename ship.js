@@ -1,4 +1,4 @@
-let myPage = ['canoepage2', 'vikingpage1', 'vikingpage2', 'cogship1', 'cogship2', 'caravelpage1', 'caravelpage2', 'galleypage1', 'galleypage2', 'steampage1', 'steampage2', 'presentpage1', 'conclusionpage'];
+let myPage = ['canoepage2', 'vikingpage1', 'vikingpage2', 'cogship1', 'cogship2', 'caravelpage1', 'caravelpage2', 'galleypage1', 'galleypage2', 'steampage1', 'steampage2', 'presentpage1', 'beforeconcluding', 'conclusionpage'];
 let pageCount = 0;
 
 let answer1 = "";
@@ -89,6 +89,7 @@ function btnGroupHidden(){
   buttonGroup.style.zIndex = "-10";
 }
 
+// Next Page
 function nextPage(){
   let nextBtn = document.getElementById("nextButton");
   page.dataset.scene = myPage[pageCount%(myPage.length)];
@@ -96,10 +97,14 @@ function nextPage(){
   console.log("Page : " + myPage[pageCount%(myPage.length)]);
   pageCount++;
 
+  // Before Final Page
+  if(pageCount == myPage.length-1){
+    btnGroupHidden();
+  }
+  // Final Page
   if(pageCount == myPage.length){
     nextBtn.style.opacity = "0";
     nextBtn.style.zIndex = "-10";
-    btnGroupHidden();
     showAnswer();
   }
 }
