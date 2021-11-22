@@ -170,7 +170,7 @@ function showAnswer(){
   }
   // Ship List Details
   if(effects.indexOf(" Viking ship") !== -1){
-    document.getElementsByClassName('shipDetails')[0].innerHTML = '<b>Viking ship </b> สามารถใช้ตกปลา มีน้ำหนักเบา ทำให้เดินเรือได้เร็ว แลเป็นเรือขึ้นชื่อที่ชาวไวกิ้งใช้เพื่อการขโมยและหลบหนีอย่างรวดเร็ว';
+    document.getElementsByClassName('shipDetails')[0].innerHTML = '<b>Viking ship </b> สามารถใช้ตกปลา มีน้ำหนักเบา ทำให้เดินเรือได้เร็ว และเป็นเรือขึ้นชื่อที่ชาวไวกิ้งใช้เพื่อการขโมยและหลบหนีอย่างรวดเร็ว';
   }
   if(effects.indexOf(" Cog ship") !== -1){
     document.getElementsByClassName('shipDetails')[1].innerHTML = '<b>Cog ship </b> เรือขนาดใหญ่ มักใช้ขนย้ายอุปกรณ์ทางการรบ และโจรสลัดก็ชอบใช้เรือประเภทนี้ในการดักชิงเสบียงและอาวุธทางทะเล';
@@ -185,6 +185,6 @@ function showAnswer(){
     document.getElementsByClassName('shipDetails')[4].innerHTML = '<b>Steam boat </b> เรือจักรไอน้ำ นิยมใช้ล่องตามแม่น้ำ ข้ามฝั่ง เห็นได้ถึงพัฒนาการเรือที่ไม่ใช้แรงมนุษย์แล้ว ใช้เป็นเครื่องจักรในการเดินเรือแทน';
   }
   if(effects.indexOf(" เรือปัจจุบัน") !== -1){
-    document.getElementsByClassName('shipDetails')[5].innerHTML = '<b>เรือปัจจุบัน </b> สามารถใช้ตกปลา มีน้ำหนักเบา ทำให้เดินเรือได้เร็ว แลเป็นเรือขึ้นชื่อที่ชาวไวกิ้งใช้เพื่อการขโมยและหลบหนีอย่างรวดเร็ว';
+    document.getElementsByClassName('shipDetails')[5].innerHTML = '<b>เรือปัจจุบัน </b> สามารถใช้ตกปลา มีน้ำหนักเบา ทำให้เดินเรือได้เร็ว และเป็นเรือขึ้นชื่อที่ชาวไวกิ้งใช้เพื่อการขโมยและหลบหนีอย่างรวดเร็ว';
   }
 }
