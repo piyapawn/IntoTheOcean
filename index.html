@@ -62,11 +62,12 @@
                 <h1>พื้นที่อยู่อาศัยขาดแคลนอาหาร</h1><br>
 
                 <div id="canoeQuiz" class="answer">
-                    <div class="ans canoeAns1" onclick="answer1 = 'ออกไปชิงอาหารจากหมู่บ้านอื่น'; effect1 = ' Viking ship'; console.log('ผลกระทบ : '+effect1); canoeQuiz.dataset.scene = `canoeAns1`">
-                        <b>ออกไปชิงอาหารจากหมู่บ้านอื่น<span></span></b>
-                    </div>
+                
                     <div class="ans canoeAns2" onclick="answer1 = 'พยายามอยู่ให้ได้'; effect1 = ''; console.log('ผลกระทบ : '+effect1); canoeQuiz.dataset.scene = `canoeAns2`">
                         <b>พยายามอยู่ให้ได้<span></span></b>
+                    </div>
+                    <div class="ans canoeAns1" onclick="answer1 = 'ออกไปชิงอาหารจากหมู่บ้านอื่น'; effect1 = ' Viking ship'; console.log('ผลกระทบ : '+effect1); canoeQuiz.dataset.scene = `canoeAns1`">
+                        <b>ออกไปชิงอาหารจากหมู่บ้านอื่น<span></span></b>
                     </div>
                 </div>
             </div>
@@ -101,7 +102,7 @@
 
                 <div id="vikingQuiz" class="answer">
                     <div class="ans vikingAns1" onclick="answer2 = 'ใช้ชีวิตในทะเล ดักชิงเสบียงจากเรืออื่น'; effect2 = ' Cog ship'; vikingQuiz.dataset.scene = `vikingAns1`">
-                        <b>ใช้ชีวิตในทะเล ดักชิงเสบียงจากเรืออื่น<span></span></b>
+                        <b>ใช้ชีวิตในทะเล ชิงเสบียงจากเรืออื่น<span></span></b>
                     </div>
                     <div class="ans vikingAns2" onclick="answer2 = 'พยายามอยู่ให้ได้'; effect2 = ''; vikingQuiz.dataset.scene = `vikingAns2`">
                         <b>พยายามอยู่ให้ได้<span></span></b>
@@ -176,12 +177,13 @@
                 <h1>เรือที่ใช้อยู่ช้าจัง ไล่ตามเรืออื่นไม่ทันเลย</h1><br>
 
                 <div id="caravelQuiz" class="answer">
-                    <div class="ans caravelAns1" onclick="answer4 = 'ปรับปรุงให้เร็วขึ้น'; effect4 = ' Galley'; caravelQuiz.dataset.scene = `caravelAns1`">
-                        <b>ปรับปรุงให้เร็วขึ้น<span></span></b>
-                    </div>
                     <div class="ans caravelAns2" onclick="answer4 = 'ก็ยังใช้ได้ ไม่เป็นไรหรอก'; effect4 = ''; caravelQuiz.dataset.scene = `caravelAns2`">
                         <b>ก็ยังใช้ได้ ไม่เป็นไรหรอก<span></span></b>
                     </div>
+                    <div class="ans caravelAns1" onclick="answer4 = 'ปรับปรุงให้เร็วขึ้น'; effect4 = ' Galley'; caravelQuiz.dataset.scene = `caravelAns1`">
+                        <b>ปรับปรุงให้เร็วขึ้น<span></span></b>
+                    </div>
+                    
                 </div>
             </div>
             <div class="ship">
@@ -252,12 +254,13 @@
                 <h1>เทคโนโลยีใหม่ๆเยอะมาก</h1><br>
 
                 <div id="steamQuiz" class="answer">
-                    <div class="ans steamAns1" onclick="answer6 = 'ลองนำมาปรับใช้กับเรือ'; effect6 = ' เรือปัจจุบัน'; steamQuiz.dataset.scene = `steamAns1`">
-                        <b>ลองนำมาปรับใช้กับเรือ<span></span></b>
-                    </div>
                     <div class="ans steamAns2" onclick="answer6 = 'ไม่อยากเสี่ยงเลย'; effect6 = ''; steamQuiz.dataset.scene = `steamAns2`">
                         <b>ไม่อยากเสี่ยงเลย<span></span></b>
                     </div>
+                    <div class="ans steamAns1" onclick="answer6 = 'ลองนำมาปรับใช้กับเรือ'; effect6 = ' เรือปัจจุบัน'; steamQuiz.dataset.scene = `steamAns1`">
+                        <b>ลองนำมาปรับใช้กับเรือ<span></span></b>
+                    </div>
+                    
                 </div>
             </div>
             <div class="ship">
@@ -297,7 +300,7 @@
         <!-------------------------------------------------- Conclusion Page -------------------------------------------------->
         <div class="conclusionpage">
             <div class="conclution_details">
-                <center><h1>บทสรุป</h1></center>
+                <center><h1 style="font-family: 'Itim', cursive;">บันทึกการเดินทาง</h1></center>
                 <div class="detail">
                     <p>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ฤดูหนาวนี้ยาวนานเหลือเกิน อาหารที่มีอยู่เริ่มจะไม่พอแล้ว ผู้คนในหมู่บ้านจึง <b class="answerConclusion">________</b> 

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Itim&family=Mali:wght@300&display=swap');
 
 body {
     font-family: 'IBM Plex Sans Thai', sans-serif;
@@ -25,8 +27,8 @@ body {
 /* ป้ายไม้ */
 .logo{
     position: absolute;
-    top:0%;
-    left:-7%;
+    top:0rem;
+    left:-8rem;
     transition: 1s;
 }
 
@@ -43,8 +45,8 @@ body {
     height:60px;
     cursor: pointer;
     position: absolute;
-    bottom: 30%;
-    left: 8%;
+    top: 37rem;
+    left: 10rem;
     transition: 1s;
     z-index: 10;
 }
@@ -55,22 +57,12 @@ body {
 
 }
 
-/* รูปเรือตรงปุ่ม ออกเดินทาง  */
-.shipicon{
-    position: absolute;
-    bottom:35.5%;
-    left: 23%;
-    cursor: pointer;
-    transition: 2s;
-    z-index: -1;
-}
-
 /* ปุ่มโฮม */
 .homeicon{
     width: 100px;
     height: 70px;
     position: absolute;
-    bottom: 2rem;
+    top: 55rem;
     left: 2rem;
     z-index: 30;
     border: 0px;
@@ -91,8 +83,8 @@ body {
     width: 100px;
     height: 70px;
     position: absolute;
-    bottom: 2rem;
-    left: 10rem;
+    top: 55rem;
+    left: 9rem;
     z-index: 30;
     border: 0px;
     border-radius: 30px;
@@ -111,7 +103,7 @@ body {
     position: absolute;
     width: 100%;
     margin: 10px 0px 10px 0px;
-    bottom: 1.4rem;
+    top: 55rem;
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -236,14 +228,14 @@ body {
 .cloud2{
     width: 15%;
     position: absolute;
-    top: 4%;
-    right: 25%;
+    bottom: 54rem;
+    left: 65rem;
     animation:cloudmove 10s infinite alternate;
 }
 .cloud3{
     width: 20%;
     position: absolute;
-    right: 10%;
+    left: 70rem;
     animation:cloudmove 7s infinite alternate;
 }
 
@@ -251,15 +243,13 @@ body {
 .nexticon{
     background: transparent;
     position: absolute;
-    bottom: 30%;
-    right: 5%;
+    bottom: 20rem;
+    right: 6rem;
     border: none;
     cursor: pointer;
     z-index: 50;
+    animation: buttonkiki 0.5s infinite alternate;
     transition: 1.5s;
-}
-.nexticon:hover{
-    animation: buttonkiki 0.6s infinite alternate;
 }
 
 /* All Ship Page */
@@ -276,6 +266,14 @@ body {
     justify-content: center;
 }
 
+.conclution_details{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    background: url(Paper10.png);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* ----- Information & Details ----- */
 .canoe_informationbox, .viking_informationbox,
 .cog_informationbox, .caravel_informationbox,
@@ -288,7 +286,7 @@ body {
     padding-left: 110px;
     padding-right: 110px;
     border-radius: 20px;
-    top: 5%;
+    bottom: 30rem;
     transform: translateY(-100px);
     background: url(paper10.png);
     background-size: 100%;
@@ -305,7 +303,7 @@ body {
 }
 .texthead{
     color: #111; 
-    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'Itim', cursive;
     font-size: 50px; 
     font-weight: bold; 
     letter-spacing: -1px; 
@@ -370,7 +368,7 @@ body {
     position: absolute;
     padding: 20px;
     border-radius: 30px;
-    top: 5%;
+    bottom: 40rem;
     transform: translateY(-100px);
     background:url(paper9.png);
     transition: 2s;
@@ -383,7 +381,7 @@ body {
     position: absolute;
     padding: 20px;
     border-radius: 30px;
-    top: 5%;
+    top: 3rem;
     transform: translateY(-100px);
     background-color: rgba(255,255,255,0.8);
     transition: 2s;
@@ -458,6 +456,7 @@ body {
 #page:not([data-scene="mainpage"]) .logo{
     transform: translateY(-800px);
 }
+
 #page:not([data-scene="mainpage"]) .canoe_pic{
     transform: translateX(0%);
 }
@@ -465,7 +464,7 @@ body {
     transform: translateX(-1000px);
 }
 #page[data-scene="mainpage"] .nexticon{
-    transform: translateX(200px);
+    right: -20rem;
 }
 
 /* Canoe Page */
@@ -745,8 +744,8 @@ body {
     
 }
 #page[data-scene="beforeconcluding"] .textfade::before{
-    animation: animate linear 24s;
-    animation-delay: 3s;
+    animation: animate linear 15s;
+    animation-delay: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 1;
@@ -824,7 +823,7 @@ body {
     height: 40%;
     left: 0;
     right: 0;
-    bottom:-140px;
+    bottom: -10rem;
     margin: auto;
 }
 .waveWrapperInner {
@@ -832,7 +831,6 @@ body {
     width: 100%;
     overflow: hidden;
     height: 100%;
-    bottom: -1px;
     
 }
 .bgTop {
@@ -902,10 +900,10 @@ body {
     width: 80%;
     position: absolute;
     padding: 20px;
-    top: 30%;
+    top: 20rem;
     text-align: center;
     transform: translateY(-100px);
-    transition: 2s;
+    transition: 1s;
     opacity: 0;
     z-index: -10;
 }
@@ -941,7 +939,7 @@ body {
         opacity: 0;
     }
     60% {
-        content: "สิ่งนี้คือฟันเฟืองตัวน้อยๆที่คอยขับเคลื่อนอารยธรรมของมนุษยชาติ";
+        content: "สิ่งนี้คือฟันเฟืองตัวน้อยๆ\Aที่คอยขับเคลื่อนอารยธรรมของมนุษยชาติ";
         opacity: 1;
     }
     70% {
@@ -956,7 +954,7 @@ body {
         opacity: 0;
     }
     100% {
-        content: "กดไปต่อเพื่อ\Aดูสรุปการเดินทางของคุณ";
+        content: "กดปุ่มด้านขวาเพื่อ\Aดูสรุปการเดินทางของคุณ";
         opacity: 1;
         white-space: pre-wrap;
     }
